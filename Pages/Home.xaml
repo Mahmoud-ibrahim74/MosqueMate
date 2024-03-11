@@ -1,0 +1,118 @@
+﻿<Page x:Class="MosqueMate.Pages.home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:uc="clr-namespace:MosqueMate.UserControls"
+        Background="Transparent" mc:Ignorable="d" Height="675" Width="1030" Loaded="Page_Loaded" Unloaded="Page_Unloaded"  FlowDirection="RightToLeft">
+    <Page.Resources>
+        <Storyboard x:Key="SlideDownStoryboard">
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Height"
+                             From="0" To="525" Duration="0:0:0.9">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Opacity"
+                             From="0" To="1" Duration="0:0:0.9">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="SlideUpStoryboard">
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Height"
+                             From="525" To="0" Duration="0:0:0.9">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseIn" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Opacity"
+                             From="1" To="0" Duration="0:0:0.9">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseIn" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="343*"></ColumnDefinition>
+            <ColumnDefinition Width="364*"></ColumnDefinition>
+            <ColumnDefinition Width="323*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="143*"></RowDefinition>
+            <RowDefinition Height="532*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush >
+                <GradientStop Color="#41518F" Offset="0" />
+                <GradientStop Color="#2C386C" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Border CornerRadius="20" Padding="0 25" Background="#243771"  Grid.Column="2" Grid.Row="1" Margin="15,0,15,8">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" MinHeight="46.94"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal" Margin="28,-4,10,27">
+                    <fa:IconImage Icon="Circle" Style="{StaticResource titleIcon}"/>
+                    <TextBlock x:Name="prayersMenuLBL" Text="." Style="{StaticResource titleText}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Margin="0,0,0,-18">
+                    <uc:Item x:Name="fajrItem"   Title="." Desc="."   Icon="Cloudversify"  Height="64" Background="#FF495385">
+                    </uc:Item>
+                    <uc:Item x:Name="sunraiseItem" FontWeight="Bold" Title="." Desc="." Icon="CloudSun" Height="63" Cursor="Hand" >
+                    </uc:Item>
+                    <uc:Item x:Name="duhrItem" FontWeight="Bold" Title="." Desc="." Icon="CloudSunRain" Height="70" Cursor="Hand" >
+                    </uc:Item>
+                    <uc:Item x:Name="asrItem" FontWeight="Bold" Title="." Desc="." Icon="Sun" Cursor="Hand" >
+                    </uc:Item>
+                    <uc:Item x:Name="magribItem" FontWeight="Bold" Title="." Desc="." Icon="CloudSun" Height="66" Cursor="Hand" >
+                    </uc:Item>
+                    <uc:Item x:Name="ishaItem" Title="." Desc="." Icon="CloudSun" Cursor="Hand" >
+                    </uc:Item>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <uc:InfoCard x:Name="randomZekrCard"   Cursor="Hand" Grid.Column="0"  Title="."  Number="0" Icon="Ussunnah" Background1="#827BFF" Background2="#D9B5FF" EllipseBackground1="#B298FD" EllipseBackground2="#E4BBFF" MouseLeftButtonDown="randomZekrCard_MouseLeftButtonDown" Margin="14,1,13,2"/>
+        <uc:InfoCard x:Name="qiblaDirectionCard" Grid.Column="1" Title="." Number="." Icon="Compass" Background1="#859398" Background2="#283048" EllipseBackground1="#283048" EllipseBackground2="#283048" Margin="23,1,25,2" />
+        <uc:InfoCard x:Name="timeLeftCard" Grid.Column="2" Title="." Number="." Icon="Pray" Background1="#FD8A87" Background2="#F3AB92" EllipseBackground1="#FBD5A8" EllipseBackground2="#FDB89B" Margin="15,1,-8,2"/>
+
+        <!--Info Cards-->
+
+
+        <Border x:Name="zeker_container"  CornerRadius="20" Padding="0 25"  Visibility="Hidden" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="14,0,5,8" KeyDown="zeker_container_KeyDown" >
+            <Border.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Pages/freePlastine.jpg"/>
+            </Border.Background>
+            <WrapPanel x:Name="popup"  Orientation="Horizontal" Margin="0,0,0,-22">
+                <Label x:Name="zekrTitle" Margin="15" VerticalContentAlignment="Center"  Grid.Row="0" Foreground="White" FontSize="20"   Content=".."  Background="#FF495385" Width="650" Height="62"/>
+                <GridSplitter  Grid.Row="2" Width="650" Margin="15"  Height="2" HorizontalAlignment="Stretch" Background="#FF8DACC5" />
+                <TextBlock  x:Name="zekrText"  Text="{Binding Text, Mode=OneWay}" MinWidth="100" Width="675" Margin="15" Grid.Row="1" FontSize="20" FontWeight="Regular" TextWrapping="WrapWithOverflow" Foreground="White" Padding="20" LineStackingStrategy="BlockLineHeight"  LineHeight="80" Height="269" />
+
+                <Label x:Name="counterLBL" Height="64" Background="Transparent" Margin="15,0,0,0"  Width="171"  Foreground="White"   FontSize="28"></Label>
+                <materialDesign:Chip x:Name="zekrCounter"   Margin="120,0,0,0"  Content="     0" Foreground="White"   FontSize="28" Height="64" Background="#FF426B9E" Width="101" >
+                </materialDesign:Chip>
+                <Label x:Name="numberLBL"  Margin="138,0,0,0" Width="120" Height="64"  Foreground="White"   FontSize="28"></Label>
+            </WrapPanel>
+        </Border>
+
+
+
+
+
+
+    </Grid>
+</Page>

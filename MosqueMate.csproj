@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MosqueMate</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>pray.ico</ApplicationIcon>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MosqueMateMedia\**" />
+    <Compile Remove="MosqueMateServices\**" />
+    <EmbeddedResource Remove="MosqueMateMedia\**" />
+    <EmbeddedResource Remove="MosqueMateServices\**" />
+    <None Remove="MosqueMateMedia\**" />
+    <None Remove="MosqueMateServices\**" />
+    <Page Remove="MosqueMateMedia\**" />
+    <Page Remove="MosqueMateServices\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\Cairo-Black-3.ttf" />
+    <None Remove="Fonts\Cairo-Regular.ttf" />
+    <None Remove="Pages\freePlastine.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="pray.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="5.15.4" />
+    <PackageReference Include="Humanizer.Core" Version="2.14.1" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="MosqueMateServices\MosqueMateServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Cairo-Black-3.ttf" />
+    <Resource Include="Fonts\Cairo-Regular.ttf" />
+    <Resource Include="Pages\freePlastine.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

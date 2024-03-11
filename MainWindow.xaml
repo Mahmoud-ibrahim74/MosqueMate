@@ -1,0 +1,187 @@
+﻿<Window x:Class="MosqueMate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:uc="clr-namespace:MosqueMate.UserControls"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
+         mc:Ignorable="d" Height="740" Width="1280" Loaded="Window_Loaded" FlowDirection="RightToLeft">
+    <Window.Background>
+        <LinearGradientBrush >
+            <GradientStop Color="#41518F" Offset="0" />
+            <GradientStop Color="#2C386C" Offset="1" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Window.Clip>
+        <RectangleGeometry Rect="0,0,1280,740" RadiusX="10" RadiusY="10"></RectangleGeometry>
+    </Window.Clip>
+    <Window.Resources>
+        <Storyboard x:Key="SlideDownStoryboard">
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Height"
+                             From="0" To="500" Duration="0:0:0.9">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Opacity"
+                             From="0" To="1" Duration="0:0:0.9">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Key="SlideUpStoryboard">
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Height"
+                             From="500" To="0" Duration="0:0:0.9">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseIn" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Opacity"
+                             From="1" To="0" Duration="0:0:0.9">
+                <DoubleAnimation.EasingFunction>
+                    <QuadraticEase EasingMode="EaseIn" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"></RowDefinition>
+            <RowDefinition Height="135*"/>
+        </Grid.RowDefinitions>
+        <!--#region Top Menu -->
+        <Grid Grid.Row="0" Grid.Column="1" Background="Transparent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="212*"></ColumnDefinition>
+                <ColumnDefinition Width="245*"></ColumnDefinition>
+                <ColumnDefinition Width="202*"></ColumnDefinition>
+                <ColumnDefinition Width="371*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Width="194">
+                <Button x:Name="timeCLock" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="189" />
+            </StackPanel>
+            <StackPanel  HorizontalAlignment="Center" Grid.Column="1" Margin="0,16,0,15" Width="242">
+                <Button x:Name="hijriDate" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="220" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Height="30" Width="194">
+                <Button x:Name="georgianDate" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="189" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Grid.Column="3" Width="351" Margin="0,16,0,15" Cursor="Hand">
+                <Button x:Name="nextPrayer" FontWeight="Bold" FontSize="15" Content="-" Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="340"  Cursor="Hand" />
+            </StackPanel>
+        </Grid>
+        <!--#endregion-->
+
+
+
+        <!--#region Left Menu -->
+        <Border CornerRadius="10 0 0 10" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush >
+                    <GradientStop Color="#223266"  />
+                    <GradientStop Color="#27376B"  />
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <StackPanel>
+                <!--Username-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 15 0 0" Height="94" Width="210">
+                    <Border CornerRadius="10" Width="88" Height="62">
+                        <Border.Background>
+                            <ImageBrush x:Name="appLogo"/>
+                        </Border.Background>
+                    </Border>
+
+                    <StackPanel Margin="10 0 0 0" VerticalAlignment="Center">
+                        <TextBlock x:Name="appTitle" Text="." FontWeight="Bold" FontSize="15" Margin="0 0 0 5" Foreground="#C2CFFF"/>
+                        <TextBlock Text="V 1.0" Foreground="#7788bf" FontSize="11"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <Separator Height="0.8" Background="#46558a" Margin="20 30 20 30"/>
+
+                <!--Menu Buttons-->
+                <Button x:Name="homeBtn" Style="{StaticResource menuButtonActive}" Cursor="Hand" Click="homeBtn_Click" Height="65">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Home" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock x:Name="homeLBL" Text="." Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+
+                <!--<Button Style="{StaticResource menuButton}" Cursor="Hand">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="FileSignature" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock Text="Listing" Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>-->
+
+                <Button x:Name="hadithBtn" Style="{StaticResource menuButton}" Cursor="Hand" Click="hadithBtn_Click" Height="65">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="EnvelopeOpenText" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock x:Name="hadithTxt" Text="." Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="quranBtn" Style="{StaticResource menuButton}" Cursor="Hand" Click="quranBtn_Click" Height="65">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Quran" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock x:Name="quranText" Text="." Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="AdhkarBtn" Style="{StaticResource menuButton}" Cursor="Hand" Click="AdhkarBtn_Click" Height="65">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Ussunnah" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock x:Name="AdhkarText" Text="." Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="contactUsBtn" Style="{StaticResource menuButton}" Cursor="Hand" Click="contactUsBtn_Click" Height="65">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="HandsHelping" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock x:Name="contactUsTxt" Text="." Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="settingsBtn" Style="{StaticResource menuButton}" Cursor="Hand" Click="settingsBtn_Click" Height="65">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Cog" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock x:Name="SettingsLBL" Text="." Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="minimizeBtn"  Style="{StaticResource menuButton}" Cursor="Hand" Click="minimizeBtn_Click" Height="65">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="WindowMinimize"  Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock x:Name="minimizeText" Text="." Style="{StaticResource menuButtonText}" />
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="closeAppBTN" Style="{StaticResource menuButton}" Cursor="Hand" Click="closeAppBTN_Click" Height="65">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="PowerOff" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBlock x:Name="closeAppLBL" Text="." Style="{StaticResource menuButtonText}"/>
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+        </Border>
+        <!--#endregion-->
+
+        <!--Main Section-->
+        <Border Grid.Column="1" Grid.Row="1"  Grid.RowSpan="2" Background="Transparent">
+            <Frame x:Name="PagesNavigation" NavigationUIVisibility="Hidden" >
+
+            </Frame>
+        </Border>
+
+    </Grid>
+</Window>

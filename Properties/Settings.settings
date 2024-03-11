@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MosqueMate.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="currentLang" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ar</Value>
+    </Setting>
+    <Setting Name="City" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Cairo</Value>
+    </Setting>
+    <Setting Name="Country" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Egypt</Value>
+    </Setting>
+    <Setting Name="MuezzinFilename" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AbdelAbaset.mp3</Value>
+    </Setting>
+    <Setting Name="AppThemeLight" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="calculationMethod" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="notification" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="souraId" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="souraverticalScroll" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
