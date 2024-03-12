@@ -298,7 +298,8 @@ namespace MosqueMate.Pages
                         }
                     }
                 }
-                if (DateTimeHelper.IsLessOneHour())
+                var res = DateTimeHelper.IsLessOneHour();
+                if (res)
                 {
                     notification.ShowNotification("Alert", resource["AlertNotify"], System.Windows.Forms.ToolTipIcon.Warning);
                 }

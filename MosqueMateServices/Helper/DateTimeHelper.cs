@@ -45,9 +45,9 @@ namespace MosqueMateServices.Helper
             if (nextPrayerTime == default)  // if nextPrayerTime has default value doesn't assgin to new value
                 return false;
 
-
-            var result = nextPrayerTime.TimeOfDay.Subtract(DateTime.Now.TimeOfDay);
-            return (int)result.TotalMinutes <= 59;
+            var result = DateTime.Now - nextPrayerTime;
+            var hours = Math.Abs(result.Hours);
+            return hours <= 1 ? true : false;
         }
         /// <summary>  
         ///   return true if time now less than prayer time for half hour,otherwise return false   
@@ -71,7 +71,7 @@ namespace MosqueMateServices.Helper
         /// <returns>string time format</returns>  
         public static string GetSubPrayers()
         {
-            var result = nextPrayerTime.TimeOfDay.Subtract(DateTime.Now.TimeOfDay);
+            var result = nextPrayerTime - DateTime.Now;
             return result.ToString(@"hh\:mm");
 
         }
