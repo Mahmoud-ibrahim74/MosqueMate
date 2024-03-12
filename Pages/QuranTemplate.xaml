@@ -7,7 +7,7 @@
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:uc="clr-namespace:MosqueMate.UserControls"
-         mc:Ignorable="d" Height="700" Width="700" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown"  Loaded="Window_Loaded"  AllowsTransparency="True" WindowStyle="None"  Background="Transparent"  FlowDirection="RightToLeft">
+         mc:Ignorable="d" Height="700" Width="500" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown"   Loaded="Window_Loaded" AllowsTransparency="True" WindowStyle="None"  Background="Transparent"  FlowDirection="RightToLeft">
     <Window.Clip>
         <RectangleGeometry Rect="0,0,700,700" RadiusX="15" RadiusY="15"></RectangleGeometry>
     </Window.Clip>
@@ -16,18 +16,12 @@
         <Border x:Name="Quran_container"  CornerRadius="20" Padding="0 25"  Visibility="Visible"  Background="#FF39476B"   >
             <WrapPanel x:Name="popup"  Orientation="Horizontal" Margin="0,-25,0,-22">
                 <Button x:Name="closeWindow" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Click="closeWindow_Click">x</Button>
-                <TextBlock x:Name="QuranTitle" Margin="15"   Grid.Row="0" Foreground="White" FontSize="20"   Text="........................."  Background="#FF495385" Width="650" Height="62" TextAlignment="Center" Padding="10"/>
+                <TextBlock x:Name="QuranTitle" Margin="15"   Grid.Row="0" Foreground="White" FontSize="20"   Text="........................."  Background="#FF495385" Width="470" Height="62" TextAlignment="Center" Padding="10"/>
                 <GridSplitter  Grid.Row="2" Width="650" Margin="15"  Height="2" HorizontalAlignment="Stretch" Background="#FF8DACC5" />
                 <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" Name="SouraScroller" Height="440">
-                    <TextBlock  x:Name="QuranText"  Text="{Binding Text, Mode=OneWay}" MinWidth="100" Width="675" Margin="15" Grid.Row="1" FontSize="17"  TextWrapping="Wrap" TextAlignment="Left" Foreground="White" Padding="20" LineStackingStrategy="BlockLineHeight"  LineHeight="60" />
+                    <TextBlock  x:Name="QuranText"  Text="{Binding Text, Mode=OneWay}" MinWidth="100" Width="470" Margin="15" Grid.Row="1" FontSize="17"  TextWrapping="Wrap" TextAlignment="Left" Foreground="White" Padding="20" LineStackingStrategy="BlockLineHeight"  LineHeight="60" />
                 </ScrollViewer>
-                <TextBlock x:Name="DescLBL" Height="64" Background="Transparent" Margin="15"  Width="250"  Foreground="White" TextAlignment="Left" Text="." Padding="15"  FontSize="17"></TextBlock>
-                <Grid x:Name="QuranCounterGrid" Width="70" Margin="30 0 0 0" Height="71">
-                    <Border x:Name="QuranCounterBorder" Background="#FF426B9E" CornerRadius="100"  MouseLeftButtonDown="QuranCounter_MouseLeftButtonDown">
-                        <TextBlock x:Name="QuranCounter" FontSize="15" Foreground="White" Text="." Padding="30 25 0 0" ></TextBlock>
-                    </Border>
-                </Grid>
-                <Label x:Name="numberLBL"  Width="120" Margin="130,0,0,0"   Height="64"  Foreground="White"   FontSize="17" TextBlock.FontSize="15"/>
+                <TextBlock x:Name="DescLBL"  Height="64" Background="Transparent" Margin="15" Padding="200 15 0 0" Text="...."   Width="400"  Foreground="White"   FontSize="25" ></TextBlock>
             </WrapPanel>
         </Border>
     </Grid>

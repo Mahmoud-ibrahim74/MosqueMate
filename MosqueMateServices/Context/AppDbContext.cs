@@ -8,13 +8,13 @@ namespace MosqueMateServices.Context
 {
     public class AppDbContext
     {
-        private string server = "localhost";
-        private string database = "mosquematedb";
-        private string username = "root";
-        private string password = "";
+        private string server = "sql11.freesqldatabase.com";
+        private string database = "sql11690803";
+        private string username = "sql11690803";
+        private string password = "yjzNChjp3w";
         public void InsertIssue(DTOContactUs contactUs)
         {
-            string connectionString = $"Server={server};Database={database};User ID={username};Password={password};SslMode=none";
+            string connectionString = $"Server={server};Database={database};User ID={username};Password={password};SslMode=none;CHARSET=utf8";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 try
@@ -43,7 +43,7 @@ namespace MosqueMateServices.Context
         }
         public bool SelectVersionUpdate()
         {
-            string connectionString = $"Server={server};Database={database};User ID={username};Password={password};SslMode=none";
+            string connectionString = $"Server={server};Database={database};User ID={username};Password={password};SslMode=none;CHARSET=utf8";
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
                 try

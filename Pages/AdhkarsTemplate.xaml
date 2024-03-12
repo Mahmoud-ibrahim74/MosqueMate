@@ -7,7 +7,7 @@
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:uc="clr-namespace:MosqueMate.UserControls"
-         mc:Ignorable="d" Height="700" Width="700" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" PreviewMouseWheel="Window_PreviewMouseWheel"  Loaded="Window_Loaded" AllowsTransparency="True" WindowStyle="None"  Background="Transparent"  FlowDirection="RightToLeft">
+         mc:Ignorable="d" Height="700" Width="500" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" PreviewMouseWheel="Window_PreviewMouseWheel"  Loaded="Window_Loaded" AllowsTransparency="True" WindowStyle="None"  Background="Transparent"  FlowDirection="RightToLeft">
     <Window.Clip>
         <RectangleGeometry Rect="0,0,700,700" RadiusX="15" RadiusY="15"></RectangleGeometry>
     </Window.Clip>
@@ -16,18 +16,18 @@
         <Border x:Name="zeker_container"  CornerRadius="20" Padding="0 25"  Visibility="Visible"   Background="#FF39476B"   >
             <WrapPanel x:Name="popup"  Orientation="Horizontal" Margin="0,-25,0,-22">
                 <Button x:Name="closeWindow" Background="{x:Null}" BorderBrush="{x:Null}" BorderThickness="0" Click="closeWindow_Click">x</Button>
-                <TextBlock x:Name="zekrTitle" Margin="15"   Grid.Row="0" Foreground="White" FontSize="20"   Text="........................."  Background="#FF495385" Width="650" Height="62" TextAlignment="Center" Padding="10"/>
+                <TextBlock x:Name="zekrTitle" Margin="15"   Grid.Row="0" Foreground="White" FontSize="20"   Text="........................."  Background="#FF495385" Width="470" Height="62" TextAlignment="Center" Padding="10"/>
                 <GridSplitter  Grid.Row="2" Width="650" Margin="15"  Height="2" HorizontalAlignment="Stretch" Background="#FF8DACC5" />
                 <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto" Name="SouraScroller" Height="440">
-                    <TextBlock  x:Name="zekrText"  Text="{Binding Text, Mode=OneWay}" MinWidth="100" Width="675" Margin="15" Grid.Row="1" FontSize="17"  TextWrapping="Wrap" TextAlignment="Left" Foreground="White" Padding="20" LineStackingStrategy="BlockLineHeight"  LineHeight="60" />
+                    <TextBlock  x:Name="zekrText"  Text="{Binding Text, Mode=OneWay}" MinWidth="100" Width="470" Margin="15" Grid.Row="1" FontSize="17"  TextWrapping="Wrap" TextAlignment="Left" Foreground="White" Padding="20" LineStackingStrategy="BlockLineHeight"  LineHeight="60" />
                 </ScrollViewer>
-                <Label x:Name="DescLBL" Height="64" Background="Transparent" Margin="15"  Width="250"  Foreground="White"   FontSize="17" TextBlock.FontSize="15"></Label>
-                <Grid x:Name="zekrCounterGrid" Width="105" Margin="30 0 0 0">
-                    <Border x:Name="zekrCounterBorder" Background="#FF426B9E" CornerRadius="80"  MouseLeftButtonDown="zekrCounter_MouseLeftButtonDown">
-                        <TextBlock x:Name="zekrCounter" FontSize="15" Foreground="White" Text="." Padding="30" ></TextBlock>
+                <Label x:Name="DescLBL" Height="64" Background="Transparent" Margin="15" Padding="15"   Width="250"  Foreground="White"   FontSize="17" TextBlock.FontSize="15"></Label>
+                <Grid x:Name="zekrCounterGrid" Width="100" Height="80" Margin="-40 0 0 0">
+                    <Border x:Name="zekrCounterBorder" Background="#FF426B9E" CornerRadius="50"  MouseLeftButtonDown="zekrCounter_MouseLeftButtonDown">
+                        <TextBlock x:Name="zekrCounter" FontSize="15" Foreground="White" Text="." Padding="30,20,0,0" ></TextBlock>
                     </Border>
                 </Grid>
-                <Label x:Name="numberLBL"  Width="120" Margin="130,0,0,0"   Height="64"  Foreground="White"   FontSize="17" TextBlock.FontSize="15"/>
+                <Label x:Name="numberLBL"  Width="80" Margin="60,0,0,0"   Padding="15"  Height="64"  Foreground="White"   FontSize="17" TextBlock.FontSize="15"/>
             </WrapPanel>
         </Border>
     </Grid>

@@ -1,14 +1,11 @@
-﻿<Window x:Class="MosqueMate.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+﻿<Window x:Class="MosqueMate.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
-        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
-        xmlns:uc="clr-namespace:MosqueMate.UserControls"
-        WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True"
-         mc:Ignorable="d" Height="740" Width="1280" Loaded="Window_Loaded" FlowDirection="RightToLeft">
+        WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" mc:Ignorable="d" Height="700" Width="1280" Loaded="Window_Loaded" FlowDirection="RightToLeft">
     <Window.Background>
         <LinearGradientBrush >
             <GradientStop Color="#41518F" Offset="0" />
@@ -16,32 +13,28 @@
         </LinearGradientBrush>
     </Window.Background>
     <Window.Clip>
-        <RectangleGeometry Rect="0,0,1280,740" RadiusX="10" RadiusY="10"></RectangleGeometry>
+        <RectangleGeometry Rect="0,0,1280,700" RadiusX="10" RadiusY="10"></RectangleGeometry>
     </Window.Clip>
     <Window.Resources>
         <Storyboard x:Key="SlideDownStoryboard">
-            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Height"
-                             From="0" To="500" Duration="0:0:0.9">
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Height" From="0" To="500" Duration="0:0:0.9">
                 <DoubleAnimation.EasingFunction>
                     <QuadraticEase EasingMode="EaseOut" />
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
-            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Opacity"
-                             From="0" To="1" Duration="0:0:0.9">
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.9">
                 <DoubleAnimation.EasingFunction>
                     <QuadraticEase EasingMode="EaseOut" />
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
         <Storyboard x:Key="SlideUpStoryboard">
-            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Height"
-                             From="500" To="0" Duration="0:0:0.9">
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Height" From="500" To="0" Duration="0:0:0.9">
                 <DoubleAnimation.EasingFunction>
                     <QuadraticEase EasingMode="EaseIn" />
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
-            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Opacity"
-                             From="1" To="0" Duration="0:0:0.9">
+            <DoubleAnimation Storyboard.TargetName="zeker_container" Storyboard.TargetProperty="Opacity" From="1" To="0" Duration="0:0:0.9">
                 <DoubleAnimation.EasingFunction>
                     <QuadraticEase EasingMode="EaseIn" />
                 </DoubleAnimation.EasingFunction>
@@ -54,11 +47,11 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="13*"></RowDefinition>
+            <!--<RowDefinition Height="13*"></RowDefinition>-->
             <RowDefinition Height="135*"/>
         </Grid.RowDefinitions>
         <!--#region Top Menu -->
-        <Grid Grid.Row="0" Grid.Column="1" Background="Transparent">
+        <!--<Grid Grid.Row="0" Grid.Column="1" Background="Transparent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="212*"></ColumnDefinition>
                 <ColumnDefinition Width="245*"></ColumnDefinition>
@@ -66,21 +59,19 @@
                 <ColumnDefinition Width="371*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Height="30" Width="194">
-                <Button x:Name="timeCLock" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="189" />
+                <Button x:Name="timeCLock" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="189" Visibility="Hidden" />
             </StackPanel>
-            <StackPanel  HorizontalAlignment="Center" Grid.Column="1" Margin="0,16,0,15" Width="242">
-                <Button x:Name="hijriDate" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="220" />
+            <StackPanel HorizontalAlignment="Center" Grid.Column="1" Margin="0,16,0,15" Width="242">
+                <Button x:Name="hijriDate" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="220" Visibility="Hidden" />
             </StackPanel>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Height="30" Width="194">
-                <Button x:Name="georgianDate" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="189" />
+                <Button x:Name="georgianDate" FontWeight="Bold" FontSize="16" Content="." Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="189" Visibility="Hidden" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Grid.Column="3" Width="351" Margin="0,16,0,15" Cursor="Hand">
-                <Button x:Name="nextPrayer" FontWeight="Bold" FontSize="15" Content="-" Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="340"  Cursor="Hand" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Column="3" Width="351" Margin="0,16,0,15" Cursor="Hand">
+                <Button x:Name="nextPrayer" FontWeight="Bold" FontSize="15" Content="-" Style="{StaticResource topMenuButton}" Background="#5B60C4" Foreground="#ffffff" Width="340" Cursor="Hand" Visibility="Hidden" />
             </StackPanel>
-        </Grid>
+        </Grid>-->
         <!--#endregion-->
-
-
 
         <!--#region Left Menu -->
         <Border CornerRadius="10 0 0 10" Grid.RowSpan="2">
@@ -93,7 +84,7 @@
 
             <StackPanel>
                 <!--Username-->
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 15 0 0" Height="94" Width="210">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 15 0 0" Height="69" Width="210">
                     <Border CornerRadius="10" Width="88" Height="62">
                         <Border.Background>
                             <ImageBrush x:Name="appLogo"/>
@@ -117,11 +108,11 @@
                 </Button>
 
                 <!--<Button Style="{StaticResource menuButton}" Cursor="Hand">
-                    <StackPanel Orientation="Horizontal">
-                        <fa:IconImage Icon="FileSignature" Style="{StaticResource menuButtonIcon}"/>
-                        <TextBlock Text="Listing" Style="{StaticResource menuButtonText}"/>
-                    </StackPanel>
-                </Button>-->
+                <StackPanel Orientation="Horizontal">
+                    <fa:IconImage Icon="FileSignature" Style="{StaticResource menuButtonIcon}"/>
+                    <TextBlock Text="Listing" Style="{StaticResource menuButtonText}"/>
+                </StackPanel>
+            </Button>-->
 
                 <Button x:Name="hadithBtn" Style="{StaticResource menuButton}" Cursor="Hand" Click="hadithBtn_Click" Height="65">
                     <StackPanel Orientation="Horizontal">

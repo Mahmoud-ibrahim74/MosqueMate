@@ -111,6 +111,10 @@ namespace MosqueMate.Pages
 
                             #endregion
 
+                            #region DateCard
+                            hijriDateCard.Number = DateTimeHelper.ArabicDayName(Settings.Default.currentLang);
+                            hijriDateCard.Title = DateTimeHelper.hijriDate;
+                            #endregion
                         }
                         else
                         {
@@ -143,6 +147,12 @@ namespace MosqueMate.Pages
                         timeLeftCard.Title = DateTimeHelper.GetSubPrayers() == null ? resource["TimeLeft"] + " : " : resource["TimeLeft"];
                         timeLeftCard.Number = DateTimeHelper.GetSubPrayers();
                         #endregion
+
+                        #region DateCard
+                        hijriDateCard.Number = DateTimeHelper.ArabicDayName(Settings.Default.currentLang);
+                        hijriDateCard.Title = DateTimeHelper.hijriDate;
+                        #endregion
+
                     }
                 }
             });
@@ -288,7 +298,7 @@ namespace MosqueMate.Pages
                         }
                     }
                 }
-                if (DateTimeHelper.IsLessHalfHour())
+                if (DateTimeHelper.IsLessOneHour())
                 {
                     notification.ShowNotification("Alert", resource["AlertNotify"], System.Windows.Forms.ToolTipIcon.Warning);
                 }

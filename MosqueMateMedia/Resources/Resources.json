@@ -50,9 +50,9 @@
     "fr": "Temps de prière"
   },
   "AlertNotify": {
-    "ar": "باقى اقل  نصف ساعة على الصلاة القادمة هيا قم وصلي الصلاة السابقة  قال الله ( فخلف من بعدهم خلف أضاعوا الصلاة واتبعوا الشهوات فسوف يلقون غياً ) لا تكن منهم",
-    "en": "There is half an hour left until the next prayer. Come on, get up and pray the previous prayer. God said (So after them came successors who neglected prayer and followed desires. They will meet with error.) Do not be one of them.",
-    "fr": "Il reste une demi-heure avant la prochaine prière. Allez, lève-toi et fais la prière précédente. Dieu a dit (Ainsi, après eux sont venus des successeurs qui ont négligé la prière et suivi les désirs. Ils rencontreront l'erreur.) Ne soyez pas l'un d'entre eux."
+    "ar": "باقى اقل  من  ساعة على الصلاة القادمة هيا قم وصلي الصلاة السابقة  قال الله ( فخلف من بعدهم خلف أضاعوا الصلاة واتبعوا الشهوات فسوف يلقون غياً ) ",
+    "en": "There is half an hour left until the next prayer. Come on, get up and pray the previous prayer. God said (So after them came successors who neglected prayer and followed desires. They will meet with error.) ",
+    "fr": "Il reste une demi-heure avant la prochaine prière. Allez, lève-toi et fais la prière précédente. Dieu a dit (Ainsi, après eux sont venus des successeurs qui ont négligé la prière et suivi les désirs. Ils rencontreront l'erreur.) "
   },
   "AppSettingWindowTitle": {
     "ar": "إعدادات التطبيق",
@@ -234,8 +234,8 @@
     "fr": "Notifications"
   },
   "notificationDesc": {
-    "ar": "عند تشغيل هذه الميزة ستصلك إشعارات مثل تنبيه قبل الآذان بساعة أو إشعارات الآذان الآن",
-    "en": "When this feature is turned on, you will receive notifications such as an alert one hour before the call to prayer or notifications of the call to prayer now",
+    "ar": " عند تشغيل هذه الميزة ستصلك إشعارات مثل تنبيه قبل الآذان بساعة أو إشعارات الآذان الآن وإشعارات التحديثات",
+    "en": "When this feature is turned on, you will receive notifications such as an alert one hour before the call to prayer or notifications of the call to prayer now and Updates Notifications",
     "fr": "Lorsque cette fonctionnalité est activée, vous recevrez des notifications telles qu'une alerte une heure avant l'appel à la prière ou des notifications de l'appel à la prière maintenant"
   },
   "calculationMethod": {

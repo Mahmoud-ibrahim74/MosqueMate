@@ -87,7 +87,7 @@
 
 
         <uc:InfoCard x:Name="randomZekrCard"   Cursor="Hand" Grid.Column="0"  Title="."  Number="0" Icon="Ussunnah" Background1="#000428" Background2="#004e92" EllipseBackground1="#004e92" EllipseBackground2="#004e92" MouseLeftButtonDown="randomZekrCard_MouseLeftButtonDown" Margin="14,1,13,2"/>
-        <uc:InfoCard x:Name="qiblaDirectionCard" Grid.Column="1" Title="." Number="." Icon="Compass" Background1="#859398" Background2="#283048" EllipseBackground1="#283048" EllipseBackground2="#283048" Margin="23,1,25,2" />
+        <uc:InfoCard x:Name="hijriDateCard" Grid.Column="1" Title="." Number="." Icon="CalendarDay" Background1="#859398" Background2="#283048" EllipseBackground1="#283048" EllipseBackground2="#283048" Margin="23,1,25,2" />
         <uc:InfoCard x:Name="timeLeftCard" Grid.Column="2" Title="." Number="." Icon="Pray" Background1="#FD8A87" Background2="#F3AB92" EllipseBackground1="#FBD5A8" EllipseBackground2="#FDB89B" Margin="15,1,-8,2"/>
 
         <!--Info Cards-->

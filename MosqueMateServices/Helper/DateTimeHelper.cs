@@ -42,6 +42,10 @@ namespace MosqueMateServices.Helper
         /// <returns>bool</returns>  
         public static bool IsLessOneHour()
         {
+            if (nextPrayerTime == default)  // if nextPrayerTime has default value doesn't assgin to new value
+                return false;
+
+
             var result = nextPrayerTime.TimeOfDay.Subtract(DateTime.Now.TimeOfDay);
             return (int)result.TotalMinutes <= 59;
         }
@@ -53,6 +57,9 @@ namespace MosqueMateServices.Helper
         /// <returns>bool</returns>  
         public static bool IsLessHalfHour()
         {
+            if (nextPrayerTime == default)  // if nextPrayerTime has default value doesn't assgin to new value
+                return false;
+
             var result = nextPrayerTime.TimeOfDay.Subtract(DateTime.Now.TimeOfDay);
             return (int)result.TotalMinutes <= 30;
         }
@@ -131,6 +138,13 @@ namespace MosqueMateServices.Helper
             var culLang = lang == "ar" ? "ar-SA" : "en-SA";
             CultureInfo Arculture = new CultureInfo(culLang);
             string formattedDate = DateTime.Now.ToString("dddd dd MMMM yyyy", Arculture);
+            return formattedDate;
+        }
+        public static string ArabicDayName(string lang)
+        {
+            var culLang = lang == "ar" ? "ar-SA" : "en-SA";
+            CultureInfo Arculture = new CultureInfo(culLang);
+            string formattedDate = DateTime.Now.ToString("dddd", Arculture);
             return formattedDate;
         }
         public static bool AfterIsha()

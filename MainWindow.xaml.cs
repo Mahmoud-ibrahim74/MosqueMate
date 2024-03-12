@@ -25,7 +25,7 @@ namespace MosqueMate
         public MainWindow()
         {
             InitializeComponent();
-            TimeInterval();
+            //TimeInterval();
             notification = new NotificationHelper(Settings.Default.notification);
             appData = AppDataRepo.Instance;
             zekr = new ZekrRepository();
@@ -70,22 +70,22 @@ namespace MosqueMate
                     #endregion
 
                 }
-                TimeInterval();
+                //TimeInterval();
                 PagesNavigation.Navigate(new Uri("Pages/Home.xaml", UriKind.RelativeOrAbsolute));
             });
         }
 
-        private void TimeInterval()
-        {
-            BackgroundTask.RunTaskWithWhile(1000, () =>
-            {
-                timeCLock.Content = DateTime.Now.ToString("hh:mm:ss tt");
-                using ResourceJsonRepo resource = new ResourceJsonRepo();
-                georgianDate.Content = DateTimeHelper.georgianDate;
-                hijriDate.FlowDirection = Settings.Default.currentLang == "en" ? FlowDirection.LeftToRight : FlowDirection.RightToLeft;
-                hijriDate.Content = DateTimeHelper.hijriDate;
-            });
-        }
+        //private void TimeInterval()
+        //{
+        //    BackgroundTask.RunTaskWithWhile(1000, () =>
+        //    {
+        //        timeCLock.Content = DateTime.Now.ToString("hh:mm:ss tt");
+        //        using ResourceJsonRepo resource = new ResourceJsonRepo();
+        //        georgianDate.Content = DateTimeHelper.georgianDate;
+        //        hijriDate.FlowDirection = Settings.Default.currentLang == "en" ? FlowDirection.LeftToRight : FlowDirection.RightToLeft;
+        //        hijriDate.Content = DateTimeHelper.hijriDate;
+        //    });
+        //}
         private void closeAppBTN_Click(object sender, RoutedEventArgs e)
         {
             using ResourceJsonRepo resource = new ResourceJsonRepo();

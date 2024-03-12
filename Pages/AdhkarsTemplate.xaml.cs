@@ -127,7 +127,7 @@ namespace MosqueMate.Pages
         {
             if (zekrResult.Count > 1)
             {
-                if (e.Delta > 0)
+                if (e.Delta < 0)
                 {
                     e.Handled = true;
                     nextZekr();

@@ -82,7 +82,7 @@ namespace MosqueMate.Helper.HelperUI
         }
         public static void GenerateMaterialCard(Panel panel, List<string> allQuran, RepositoriesTypes types)
         {
-            int marginCount = 120;
+            int marginCount = 20;
             #region Draw_Card
             List<Card> cards = new List<Card>();
             for (int i = 0; i < allQuran.Count; i++)
