@@ -72,7 +72,7 @@ namespace MosqueMateServices.Helper
 
         private void _notifyIcon_BalloonTipClicked(object sender, EventArgs e)
         {
-            WinFormHelper.OpenAppLink("https://github.com/Mahmoud-ibrahim74");
+            WinFormHelper.OpenAppLink("https://mosquemate.webflow.io/");
         }
     }
 }

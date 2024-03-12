@@ -4,6 +4,7 @@ using MosqueMate.Properties;
 using MosqueMateServices.DTOs;
 using MosqueMateServices.Interfaces;
 using MosqueMateServices.Repositories;
+using System;
 using System.Windows;
 using System.Windows.Input;
 
@@ -31,18 +32,26 @@ namespace MosqueMate.Pages
 
         private void closeWindow_Click(object sender, RoutedEventArgs e)
         {
+            Settings.Default["souraId"] = souraId;
+            Settings.Default["ayaId"] = QuranIndex;
+            Settings.Default.Save();
             this.Close();
+
         }
 
-         
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+
+            if (Settings.Default.souraId == souraId)
+                QuranIndex = Settings.Default.ayaId-1;
+
+
             BackgroundTask.ExecuteThreadUI(() =>
             {
                 CustomControl.SetAppFont(this);
                 if (Soura != null)
                 {
-                    QuranIndex = 1; // reset index when toggle panel 
                     QuranTitle.Text = Settings.Default.currentLang == "en" ? Soura.name : SouraNames.GetSouraNameById(souraId);
                     QuranText.Text = string.Join(ayahSeperator, Quran.QuranPagination(QuranIndex, pageSize));
                     DescLBL.Text = Settings.Default.currentLang == "en" ? $"{Soura.count} Ayat " : $"{Soura.count} آية ";
@@ -89,6 +98,9 @@ namespace MosqueMate.Pages
             }
             else if (e.Key == Key.Escape)
             {
+                Settings.Default["souraId"] = souraId;
+                Settings.Default["ayaId"] = QuranIndex;
+                Settings.Default.Save();
                 this.Close();
             }
         }

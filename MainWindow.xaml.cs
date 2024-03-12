@@ -1,6 +1,5 @@
 ﻿using MosqueMate.Helper;
 using MosqueMate.Helper.HelperUI;
-using MosqueMate.Pages;
 using MosqueMate.Properties;
 using MosqueMateMedia.Properties;
 using MosqueMateServices.AppResources;
@@ -35,12 +34,18 @@ namespace MosqueMate
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            var isUpdated = new AppDbContext().SelectVersionUpdate();
-            if(isUpdated)
+            BackgroundTask.ExecuteNormalTask(() =>
             {
-                using NotificationHelper helper = new NotificationHelper(Settings.Default.notification);
-                helper.ShowUpdateNotification();
-            }
+                #region CheckForUpdate
+                var isUpdated = new AppDbContext().SelectVersionUpdate();
+                if (isUpdated)
+                {
+                    using NotificationHelper helper = new NotificationHelper(Settings.Default.notification);
+                    helper.ShowUpdateNotification();
+                }
+                #endregion
+
+            });
             BackgroundTask.ExecuteThreadUI(() =>
             {
                 using (ResourceJsonRepo resource = new ResourceJsonRepo())

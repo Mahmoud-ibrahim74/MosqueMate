@@ -56,8 +56,8 @@ namespace MosqueMateServices.Context
                 }
                 catch (Exception ex)
                 {
-                    using NotificationHelper notification = new NotificationHelper(true);
-                    notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
+                    //using NotificationHelper notification = new NotificationHelper(true);
+                    //notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
                 }
                 finally
                 {

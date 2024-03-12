@@ -2,6 +2,7 @@
 using MosqueMate.Helper.HelperUI;
 using MosqueMate.Properties;
 using MosqueMateServices.AppResources;
+using MosqueMateServices.Context;
 using MosqueMateServices.DTOs;
 using MosqueMateServices.Enums;
 using MosqueMateServices.Helper;
@@ -109,7 +110,6 @@ namespace MosqueMate.Pages
                             prayerNowEnum = nextPrayerEnum;
 
                             #endregion
-
 
                         }
                         else

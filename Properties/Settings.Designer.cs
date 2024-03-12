@@ -122,12 +122,12 @@ namespace MosqueMate.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double souraverticalScroll {
+        public int ayaId {
             get {
-                return ((double)(this["souraverticalScroll"]));
+                return ((int)(this["ayaId"]));
             }
             set {
-                this["souraverticalScroll"] = value;
+                this["ayaId"] = value;
             }
         }
     }
