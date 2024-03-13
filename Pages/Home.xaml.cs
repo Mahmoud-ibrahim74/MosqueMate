@@ -304,7 +304,7 @@ namespace MosqueMate.Pages
                         {
                             var rr = prayerNowEnum;
 
-                            var muzzinAudio = helper.GetWavResxByName(Settings.Default.MuezzinFilename);
+                            var muzzinAudio = helper.GetWavResxByName(prayerNowEnum == PrayerTimesEnum.Fajr ? "fajrAdhan" :  Settings.Default.MuezzinFilename);
                             audioPlayer = new SoundHelper(muzzinAudio);
                             audioPlayer.PlayAudio();
                             notification.ShowNotification(resource["Adhan"], resource["prayerTimes.TimeForPrayer"] + resource[$"prayerTimes.{prayerNowEnum}"], System.Windows.Forms.ToolTipIcon.Info);

@@ -415,10 +415,10 @@ namespace MosqueMateServices.Repositories
             { 6, "ElOfasy" },
             { 7, "ELQods" },
             { 8, "HamzaElmagally" },
-            { 9, "fajrAdhan" },
-            { 10, "IslamSobhy" },
-            { 11, "MansoorAzZahrani" },
-            { 12, "Qtaamy" },
+            //{ 9, "fajrAdhan" },
+            { 9, "IslamSobhy" },
+            { 10, "MansoorAzZahrani" },
+            { 11, "Qtaamy" },
 
                 #endregion
             };
