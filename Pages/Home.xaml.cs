@@ -55,11 +55,29 @@ namespace MosqueMate.Pages
         }
         private void LoadPage()
         {
+
             PrayerTimeLeftAsync();
             BackgroundTask.ExecuteThreadUI(async () =>
             {
+
                 using (ResourceJsonRepo resource = new ResourceJsonRepo())
                 {
+                    #region CheckForUpdate
+                    var isUpdated = new AppDbContext().SelectVersionUpdate();
+                    if (isUpdated)
+                    {
+                        hyperlinkText.Text = resource["UpdateAviliable"];
+                        updateAppLink.Visibility = Visibility.Visible;
+
+                    }
+                    #endregion
+
+
+
+
+
+
+
                     #region Prayer_Resources.json
                     prayersMenuLBL.Text = resource["PrayerTime"];
                     fajrItem.Title = resource[$"prayerTimes.{PrayerTimesEnum.Fajr}"];
@@ -99,7 +117,6 @@ namespace MosqueMate.Pages
 
                             #region CastAPI_Data
                             var nextPrayerEnum = DateTimeHelper.GetNextPrayer(desrialize.Data.Timings);
-                            DateTimeHelper.georgianDate = desrialize.Data.Date.Gregorian.Date;
                             DateTimeHelper.hijriDate = Settings.Default.currentLang == "ar" ?
                             desrialize.Data.Date.Hijri.Day + " - " +
                             desrialize.Data.Date.Hijri.Month.Arabic + "-" +
@@ -365,6 +382,11 @@ namespace MosqueMate.Pages
 
                 #endregion
             }
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            WinFormHelper.OpenAppLink(e.Uri.AbsoluteUri);
         }
     }
 }

@@ -46,8 +46,8 @@ namespace MosqueMateServices.Helper
                 return false;
 
             var result = DateTime.Now - nextPrayerTime;
-            var hours = Math.Abs(result.Hours);
-            return hours <= 1 ? true : false;
+            var Minutes = Math.Abs(result.Minutes);
+            return Minutes <= 59 ? true : false;
         }
         /// <summary>  
         ///   return true if time now less than prayer time for half hour,otherwise return false   

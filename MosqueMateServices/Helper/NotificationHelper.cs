@@ -15,7 +15,13 @@ namespace MosqueMateServices.Helper
         public NotificationHelper(bool notifySetting)
         {
             _notifyIcon = new NotifyIcon();
-            this.notifySetting = notifySetting; 
+            _notifyIcon.Icon = Media.prayerICO;
+            _notifyIcon.Visible = true;
+            this.notifySetting = notifySetting;
+            _notifyIcon.BalloonTipClicked += _notifyIcon_BalloonTipClicked;
+            _notifyIcon.Click += _notifyIcon_Click;
+            _notifyIcon.MouseClick += _notifyIcon_MouseClick;
+            _notifyIcon.DoubleClick += _notifyIcon_DoubleClick;
         }
 
         public void ShowNotification(string title, string message, ToolTipIcon icon)
@@ -24,15 +30,13 @@ namespace MosqueMateServices.Helper
             {
                 if (isShowOne && notifySetting)
                 {
-                    _notifyIcon.Icon = Media.prayerICO;
-                    _notifyIcon.Visible = true;
                     _notifyIcon.ShowBalloonTip(
                                      60000,
                                         title,
                                      message,
                                     icon
                                   );
-                    isShowOne = false;  
+                    isShowOne = false;
                 }
             }
             catch (Exception ex)
@@ -49,18 +53,17 @@ namespace MosqueMateServices.Helper
         {
             try
             {
-                using ResourceJsonRepo resource = new ResourceJsonRepo();   
+                using ResourceJsonRepo resource = new ResourceJsonRepo();
                 if (isShowOne && notifySetting)
                 {
-                    _notifyIcon.Icon = Media.prayerICO;
-                    _notifyIcon.Visible = true;
+
                     _notifyIcon.ShowBalloonTip(
                                      60000,
                                         "update",
                                        resource["UpdateAviliable"],
-                                    ToolTipIcon.Info 
+                                    ToolTipIcon.Info
                                   );
-                    _notifyIcon.BalloonTipClicked += _notifyIcon_BalloonTipClicked;
+
                     isShowOne = false;
                 }
             }
@@ -70,9 +73,26 @@ namespace MosqueMateServices.Helper
             }
         }
 
+        private void _notifyIcon_DoubleClick(object sender, EventArgs e)
+        {
+            Console.WriteLine("J");
+        }
+
+        private void _notifyIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+                Console.WriteLine("J");
+
+        }
+
+        private void _notifyIcon_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("J");
+        }
+
         private void _notifyIcon_BalloonTipClicked(object sender, EventArgs e)
         {
-            WinFormHelper.OpenAppLink("https://mosquemate.webflow.io/");
+            WinFormHelper.OpenAppLink("https://github.com/Mahmoud-ibrahim74");
         }
     }
 }

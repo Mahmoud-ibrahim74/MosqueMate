@@ -422,9 +422,9 @@
     "fr": "Ce service est actuellement indisponible. Il sera disponible dans la prochaine mise à jour"
   },
   "UpdateAviliable": {
-    "ar": "يتوفر تحديث  جديد برجاء الضغط للحصول علي التحديث",
-    "en": "A new update is available. Please click to get the update",
-    "fr": "Une nouvelle mise à jour est disponible. Veuillez cliquer pour obtenir la mise à jour"
+    "ar": "يتوفر تحديث  جديد ",
+    "en": "A new update is available.",
+    "fr": "Une nouvelle mise à jour est disponible. "
   },
   "PlaySoura": {
     "ar": "الإستماع إلى السورة",

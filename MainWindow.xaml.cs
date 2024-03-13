@@ -36,14 +36,6 @@ namespace MosqueMate
         {
             BackgroundTask.ExecuteNormalTask(() =>
             {
-                #region CheckForUpdate
-                var isUpdated = new AppDbContext().SelectVersionUpdate();
-                if (isUpdated)
-                {
-                    using NotificationHelper helper = new NotificationHelper(Settings.Default.notification);
-                    helper.ShowUpdateNotification();
-                }
-                #endregion
 
             });
             BackgroundTask.ExecuteThreadUI(() =>
