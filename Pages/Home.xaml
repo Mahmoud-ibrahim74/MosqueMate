@@ -81,8 +81,8 @@
                     </uc:Item>
                     <uc:Item x:Name="ishaItem" Title="." Desc="." Icon="CloudSun" Cursor="Hand" >
                     </uc:Item>
-                    <TextBlock x:Name="updateAppLink" Padding="80 0 0 0" Visibility="Visible">           
-                          <Hyperlink NavigateUri="https://mahmoud-ibrahim74.github.io/MosqueMateApp/" RequestNavigate="Hyperlink_RequestNavigate" FontSize="10"  >
+                    <TextBlock x:Name="updateAppLink" Padding="80 0 0 0" Visibility="Hidden">           
+                          <Hyperlink NavigateUri="https://mahmoud-ibrahim74.github.io/MosqueMateApp/" RequestNavigate="Hyperlink_RequestNavigate" FontSize="15"  >
                                       <TextBlock x:Name="hyperlinkText" Text="click" TextWrapping="Wrap"/>
                           </Hyperlink>
                     </TextBlock>

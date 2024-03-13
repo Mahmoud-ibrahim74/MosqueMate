@@ -45,9 +45,13 @@ namespace MosqueMateServices.Helper
             if (nextPrayerTime == default)  // if nextPrayerTime has default value doesn't assgin to new value
                 return false;
 
-            var result = DateTime.Now - nextPrayerTime;
+            var result = nextPrayerTime - DateTime.Now;
+            var hour = Math.Abs(result.Hours);
             var Minutes = Math.Abs(result.Minutes);
-            return Minutes <= 59 ? true : false;
+            if (hour < 0)
+                return Minutes <= 59 ? true : false;
+            else
+                return false;
         }
         /// <summary>  
         ///   return true if time now less than prayer time for half hour,otherwise return false   

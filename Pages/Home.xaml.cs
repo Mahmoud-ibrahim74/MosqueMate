@@ -13,6 +13,7 @@ using Newtonsoft.Json;
 using PrayIDataServices.Helper.API;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -41,7 +42,6 @@ namespace MosqueMate.Pages
             appData = AppDataRepo.Instance;
             API.url = "https://api.aladhan.com/v1/timingsByCity/{DateTime.Now:dd-MM-yyyy}?" + $"city={appData.City}&country={appData.Country}&method={appData.method}";
             this.zekr = new ZekrRepository();
-            AdhanStatus();
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -66,18 +66,10 @@ namespace MosqueMate.Pages
                     var isUpdated = new AppDbContext().SelectVersionUpdate();
                     if (isUpdated)
                     {
-                        hyperlinkText.Text = resource["UpdateAviliable"];
                         updateAppLink.Visibility = Visibility.Visible;
-
+                        hyperlinkText.Text = resource["UpdateAviliable"];
                     }
                     #endregion
-
-
-
-
-
-
-
                     #region Prayer_Resources.json
                     prayersMenuLBL.Text = resource["PrayerTime"];
                     fajrItem.Title = resource[$"prayerTimes.{PrayerTimesEnum.Fajr}"];
@@ -171,8 +163,13 @@ namespace MosqueMate.Pages
                         #endregion
 
                     }
+
+
+                    AdhanStatus();
+
                 }
             });
+
 
         }
         private void PrayerTimeLeftAsync()
@@ -183,8 +180,6 @@ namespace MosqueMate.Pages
                 timeLeftCard.Title = DateTimeHelper.GetSubPrayers() == null ? resource["TimeLeft"] + " : " : resource["TimeLeft"];
                 timeLeftCard.Number = DateTimeHelper.GetSubPrayers();
                 ChangeColor(prayerNowEnum);
-
-
             });
 
         }
@@ -307,6 +302,8 @@ namespace MosqueMate.Pages
                     {
                         if (showPrayerTimeNow)
                         {
+                            var rr = prayerNowEnum;
+
                             var muzzinAudio = helper.GetWavResxByName(Settings.Default.MuezzinFilename);
                             audioPlayer = new SoundHelper(muzzinAudio);
                             audioPlayer.PlayAudio();
@@ -386,7 +383,23 @@ namespace MosqueMate.Pages
 
         private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
         {
-            WinFormHelper.OpenAppLink(e.Uri.AbsoluteUri);
+            try
+            {
+                // Attempt to open the URI in the default browser.
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = e.Uri.AbsoluteUri,
+                    UseShellExecute = true
+                };
+                Process.Start(psi);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to open URI: {ex.Message}");
+            }
+
+            // Mark the event as handled to prevent further processing.
+            e.Handled = true;
         }
     }
 }
