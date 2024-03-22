@@ -5,13 +5,13 @@ using System.Resources;
 
 namespace MosqueMateServices.Helper
 {
-    public class ResourceHelper : IDisposable
+    public class ResourceHelper<T> : IDisposable
     {
         public static string RESX_PATH = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames()[0];  // get path of resource file 
         private readonly ResourceManager resourceManager;
-        public ResourceHelper(string baseName =  "MosqueMateMedia.Properties.Media")
+        public ResourceHelper(string resourceFileName = "Media")
         {
-            resourceManager = new ResourceManager(baseName, typeof(MosqueMateMedia.Properties.Media).Assembly);
+            resourceManager = new ResourceManager($"MosqueMateMedia.Properties.{resourceFileName}", typeof(T).Assembly);
         }
 
 
@@ -32,6 +32,26 @@ namespace MosqueMateServices.Helper
             }
             return null;
         }
+        public Bitmap GetQuranImageResxByPageNumber(int pageNumber)
+        {
+            string file_name = string.Empty;
+
+            if (pageNumber >= 1 && pageNumber < 10)
+                file_name = $"quran_hafs_m_Page_00{pageNumber}";
+            else if (pageNumber >=10 && pageNumber < 100)
+                file_name = $"quran_hafs_m_Page_0{pageNumber}";
+            else
+                file_name = $"quran_hafs_m_Page_{pageNumber}";
+
+
+
+            if (resourceManager != null)
+            {
+                return (Bitmap)resourceManager.GetObject(file_name);
+            }
+            return null;
+        }
+
         /// <summary>  
         ///   return content of json file by name   
         /// </summary>  

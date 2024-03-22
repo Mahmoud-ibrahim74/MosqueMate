@@ -1,6 +1,7 @@
 ﻿using MosqueMate.Helper;
 using MosqueMate.Helper.HelperUI;
 using MosqueMate.Properties;
+using MosqueMateMedia.Properties;
 using MosqueMateServices.AppResources;
 using MosqueMateServices.Context;
 using MosqueMateServices.DTOs;
@@ -298,7 +299,7 @@ namespace MosqueMate.Pages
                 using ResourceJsonRepo resource = new ResourceJsonRepo();
                 if (DateTimeHelper.IsPrayerTimeNow())
                 {
-                    using (ResourceHelper helper = new ResourceHelper("MosqueMateMedia.Properties.AudioResources"))
+                    using (ResourceHelper<AudioResources> helper = new ResourceHelper<AudioResources>("AudioResources"))
                     {
                         if (showPrayerTimeNow)
                         {
@@ -312,8 +313,7 @@ namespace MosqueMate.Pages
                         }
                     }
                 }
-                var res = DateTimeHelper.IsLessOneHour();
-                if (res)
+                if (DateTimeHelper.IsLessOneHour())
                 {
                     notification.ShowNotification("Alert", resource["AlertNotify"], System.Windows.Forms.ToolTipIcon.Warning);
                 }

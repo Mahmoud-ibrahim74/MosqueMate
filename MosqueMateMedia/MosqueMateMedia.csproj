@@ -25,6 +25,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Media.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\QuranImagesResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>QuranImagesResources.resx</DependentUpon>
+    </Compile>
     <Compile Update="Properties\QuranResources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -49,6 +54,10 @@
     <EmbeddedResource Update="Properties\Media.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Media.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\QuranImagesResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuranImagesResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\QuranResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

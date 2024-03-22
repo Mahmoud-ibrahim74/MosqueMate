@@ -1,0 +1,1933 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="quran_hafs_m_Page_001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_001.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_004.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_005.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_006.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_008.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_009.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_010.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_012.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_014.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_015.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_016.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_017.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_018.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_019" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_019.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_020" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_020.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_023" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_023.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_025" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_025.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_026" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_026.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_027" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_027.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_028.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_029" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_029.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_030" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_030.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_031" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_031.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_032" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_033" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_033.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_034.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_035" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_035.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_036" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_036.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_037" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_037.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_038" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_038.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_039" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_039.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_040" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_040.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_041" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_041.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_042" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_042.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_043" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_043.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_044" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_044.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_045" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_045.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_046" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_046.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_047" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_047.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_048" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_049" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_049.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_052" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_052.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_053" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_053.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_054" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_054.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_055" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_055.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_056" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_056.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_057" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_057.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_058" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_058.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_059" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_059.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_060" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_060.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_061" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_062" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_062.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_063" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_063.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_064" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_064.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_065" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_065.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_066" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_066.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_067" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_067.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_068" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_068.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_069" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_069.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_070.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_071" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_071.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_072" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_072.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_073" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_073.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_074" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_074.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_075" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_075.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_076" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_076.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_077" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_077.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_078" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_078.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_079" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_079.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_081" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_081.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_082" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_082.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_083" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_083.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_084" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_084.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_085" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_085.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_086" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_086.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_087" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_087.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_088" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_088.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_089" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_089.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_090" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_090.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_091" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_091.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_092" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_092.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_093" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_093.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_094" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_094.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_095" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_095.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_096" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_096.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_097" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_097.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_098" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_098.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_099" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_099.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_103.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_106.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_107.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_112.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_113.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_114.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_115.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_117.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_118.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_119.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_120.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_122.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_123.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_124.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_125.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_126.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_127.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_129.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_130.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_131.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_132.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_133.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_135.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_136.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_137.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_138.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_139.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_140.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_141.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_142.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_143.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_144.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_145.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_146.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_147.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_148.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_154.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_157.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_158.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_159" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_159.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_160.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_162.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_164.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_165.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_166.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_167.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_168.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_169.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_170.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_172.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_173.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_174.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_175.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_176.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_177.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_178.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_179" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_179.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_180.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_181.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_182.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_183.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_184.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_185.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_186.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_187.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_188" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_188.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_189" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_189.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_190.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_192.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_193.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_194.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_195.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_196.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_197.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_198.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_199" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_199.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_202" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_202.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_204.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_205.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_206.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_207" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_207.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_208" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_208.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_209.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_210.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_211.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_212" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_212.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_213" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_213.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_214.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_215.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_216.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_218" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_218.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_219" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_219.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_221" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_221.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_222" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_222.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_223" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_223.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_224" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_224.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_225" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_225.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_226" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_226.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_227" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_227.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_228" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_228.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_229" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_229.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_230" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_230.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_231" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_231.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_232" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_233" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_233.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_234" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_234.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_236" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_236.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_237" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_237.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_238" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_238.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_239" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_239.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_240" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_240.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_242" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_242.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_243" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_243.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_244" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_244.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_245" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_245.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_246" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_246.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_247" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_247.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_248" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_248.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_249" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_249.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_250" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_250.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_252" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_252.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_253" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_253.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_254" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_254.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_255" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_255.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_257" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_257.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_258" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_258.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_259" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_259.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_260" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_260.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_261" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_261.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_262" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_262.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_263" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_263.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_264" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_264.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_265" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_265.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_266" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_266.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_267" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_267.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_268" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_268.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_269" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_269.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_270" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_270.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_271" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_271.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_272" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_272.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_273" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_273.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_274" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_274.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_275" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_275.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_276" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_276.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_277" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_277.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_278" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_278.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_279" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_279.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_281.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_282" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_282.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_283" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_283.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_284" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_284.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_285" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_285.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_286" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_286.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_287" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_287.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_288" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_288.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_289" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_289.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_290" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_290.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_291" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_292" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_292.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_293" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_293.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_294" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_294.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_295" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_295.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_296" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_296.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_297" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_297.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_298" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_298.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_299" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_299.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_301" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_301.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_302" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_302.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_303" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_303.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_304" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_304.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_305" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_305.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_306" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_306.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_307" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_307.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_308" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_308.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_309" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_309.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_310" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_310.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_311" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_311.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_312" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_312.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_313" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_313.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_314" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_314.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_315" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_315.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_316" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_316.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_317" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_317.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_318" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_318.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_319" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_319.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_320" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_320.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_322" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_322.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_323" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_324" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_324.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_325" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_325.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_326" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_326.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_327" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_327.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_328" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_328.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_329" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_329.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_330" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_330.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_331" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_331.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_332" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_332.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_333" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_333.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_334" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_334.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_335" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_335.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_336" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_336.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_337" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_337.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_338" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_338.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_339" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_339.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_340" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_340.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_341" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_341.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_342" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_342.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_343" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_344" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_344.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_345" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_345.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_346" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_346.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_347" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_347.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_348" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_348.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_349" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_349.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_350" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_350.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_351" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_351.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_352" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_352.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_353" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_353.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_354" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_354.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_355" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_355.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_356" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_356.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_357" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_357.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_358" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_358.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_359" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_359.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_360" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_360.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_361" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_362" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_362.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_363" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_363.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_364" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_364.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_365" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_365.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_366" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_366.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_367" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_367.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_368" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_368.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_369" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_369.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_370" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_370.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_371" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_371.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_372" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_372.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_373" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_373.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_374" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_374.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_375" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_375.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_376" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_376.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_377" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_377.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_378" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_378.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_379" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_379.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_380" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_380.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_381" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_381.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_382" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_382.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_383" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_383.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_384" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_384.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_385" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_385.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_386" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_386.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_387" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_387.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_388" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_388.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_389" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_389.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_390" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_390.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_391" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_391.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_392" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_392.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_393" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_393.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_394" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_394.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_395" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_395.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_396" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_396.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_397" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_397.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_398" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_398.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_399" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_399.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_401" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_402" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_402.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_403" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_403.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_404" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_404.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_405" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_405.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_406" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_406.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_407" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_407.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_408" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_408.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_409" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_409.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_410" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_410.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_412" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_412.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_413" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_413.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_414" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_414.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_415" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_415.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_416" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_416.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_417" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_417.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_418" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_418.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_419" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_419.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_420" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_420.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_421" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_421.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_422" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_422.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_423" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_423.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_424" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_424.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_425" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_425.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_426" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_426.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_427" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_427.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_428" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_428.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_429" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_429.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_430" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_430.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_431" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_431.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_432" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_432.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_433" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_433.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_434" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_434.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_435" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_435.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_436" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_436.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_437" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_437.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_438" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_438.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_439" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_439.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_440" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_440.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_441" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_441.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_442" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_442.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_443" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_443.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_444" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_444.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_445" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_445.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_446" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_446.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_447" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_447.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_448" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_448.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_449" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_449.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_450" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_450.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_451" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_451.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_452" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_452.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_453" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_453.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_454" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_454.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_455" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_455.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_456" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_456.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_457" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_457.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_458" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_458.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_459" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_459.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_460" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_460.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_461" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_461.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_462" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_462.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_463" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_463.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_464" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_464.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_465" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_465.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_466" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_466.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_467" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_467.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_468" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_468.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_469" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_469.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_470" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_470.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_471" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_471.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_472" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_472.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_473" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_473.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_474" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_474.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_475" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_475.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_476" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_476.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_477" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_477.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_478" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_478.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_479" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_479.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_480" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_480.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_482" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_482.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_483" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_483.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_484" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_484.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_485" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_485.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_486" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_486.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_487" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_487.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_488" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_488.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_489" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_489.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_490" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_490.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_491" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_491.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_492" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_492.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_493" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_493.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_494" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_494.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_495" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_495.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_496" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_496.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_497" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_497.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_498" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_498.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_499" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_499.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_502" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_503" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_503.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_504" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_504.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_505" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_505.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_506" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_506.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_507" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_507.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_508" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_508.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_509" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_509.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_510" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_510.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_511" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_511.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_513" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_513.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_514" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_514.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_515" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_515.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_516" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_517" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_517.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_518" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_518.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_519" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_519.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_520" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_520.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_521" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_522" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_522.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_523" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_523.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_524" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_524.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_525" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_525.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_526" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_526.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_527" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_527.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_528" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_528.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_529" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_529.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_530" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_530.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_531" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_531.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_532" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_532.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_533" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_533.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_534" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_534.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_535" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_535.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_536" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_536.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_537" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_537.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_538" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_538.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_539" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_539.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_540" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_540.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_541" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_541.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_542" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_542.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_543" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_543.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_544" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_544.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_545" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_545.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_546" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_546.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_547" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_547.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_548" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_548.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_549" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_549.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_550" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_550.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_551" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_551.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_552" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_552.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_553" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_553.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_554" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_554.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_555" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_555.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_556" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_556.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_557" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_557.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_558" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_558.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_559" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_559.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_560" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_560.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_561" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_561.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_562" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_562.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_563" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_563.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_564" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_564.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_565" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_565.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_566" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_566.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_567" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_567.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_568" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_568.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_569" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_569.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_570" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_570.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_571" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_571.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_572" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_572.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_573" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_573.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_574" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_574.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_575" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_575.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_576" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_576.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_577" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_577.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_578" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_578.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_579" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_579.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_580" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_580.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_581.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_582" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_582.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_583" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_583.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_584" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_584.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_585" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_585.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_586" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_586.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_587" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_587.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_588" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_588.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_589" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_589.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_590" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_590.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_591" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_591.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_592" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_592.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_593" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_593.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_594" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_594.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_595" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_595.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_596" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_596.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_597" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_597.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_598" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_598.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_599" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_599.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_601" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_601.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_602" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_602.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_603" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_603.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quran_hafs_m_Page_604" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quran_hafs_m_Page_604.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

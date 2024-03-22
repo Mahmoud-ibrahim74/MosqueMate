@@ -144,7 +144,7 @@ namespace MosqueMate.Helper.HelperUI
                     if (selectedCard != null)
                     {
                         var souraID = selectedCard.Name.Split('_')[2];
-                        new QuranTemplate(Convert.ToInt32(souraID)).ShowDialog();
+                        new QuranImageTemplate(Convert.ToInt32(souraID)).ShowDialog();
                     }
                     break;
                 case RepositoriesTypes.Hadith:

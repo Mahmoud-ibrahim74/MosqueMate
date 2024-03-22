@@ -1,12 +1,7 @@
-﻿using MaterialDesignThemes.Wpf;
-using MosqueMate.Helper;
+﻿using MosqueMate.Helper;
 using MosqueMate.Helper.HelperUI;
-using MosqueMate.Properties;
 using MosqueMateServices.Interfaces;
 using MosqueMateServices.Repositories;
-using MySqlX.XDevAPI.Common;
-using System;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 

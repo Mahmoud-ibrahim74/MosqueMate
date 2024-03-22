@@ -1,5 +1,6 @@
 ﻿using MosqueMate.Helper;
 using MosqueMate.Properties;
+using MosqueMateMedia.Properties;
 using MosqueMateServices.AppResources;
 using MosqueMateServices.Enums;
 using MosqueMateServices.Helper;
@@ -169,7 +170,7 @@ namespace MosqueMate.Pages
 
         private void sheckihSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            using (ResourceHelper resource = new ResourceHelper("MosqueMateMedia.Properties.AudioResources"))
+            using (ResourceHelper<AudioResources> resource = new ResourceHelper<AudioResources>("AudioResources"))
             {
                 var muzzinAudio = resource.GetWavResxByName(sheckihSelection.SelectedItem.ToString());
                 audioPlayer = new SoundHelper(muzzinAudio);
