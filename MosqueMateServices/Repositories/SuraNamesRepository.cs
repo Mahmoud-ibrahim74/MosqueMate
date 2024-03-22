@@ -14,9 +14,8 @@ namespace MosqueMateServices.Repositories
         List<Surah> DTOSura = new List<Surah>();
         public SuraNamesRepository()
         {
-            var resource = QuranResources.surahNames;
             fileHelper = new FileHelper();
-            var res = fileHelper.ReadResourcesFile(resource);
+            var res = fileHelper.ReadResourcesFile(QuranImagesResources.surahNames);
             DTOSura = JsonConvert.DeserializeObject<DTOSuraNames>(res).surahs;
         }
 

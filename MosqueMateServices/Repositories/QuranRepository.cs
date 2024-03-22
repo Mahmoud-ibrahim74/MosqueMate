@@ -18,12 +18,12 @@ namespace MosqueMateServices.Repositories
         }
         public QuranRepository(int suraNumber)
         {
-            this.suraNumber = suraNumber;
-            var suraName = $"surah_{suraNumber}";
-            var resource = QuranResources.FindByName(suraName);
-            fileHelper = new FileHelper();
-            var res = fileHelper.ReadResourcesFile(resource);
-            dTOQuran = JsonConvert.DeserializeObject<DTOQuran>(res);
+            //this.suraNumber = suraNumber;
+            //var suraName = $"surah_{suraNumber}";
+            ////var resource = QuranResources.FindByName(suraName);
+            //fileHelper = new FileHelper();
+            //var res = fileHelper.ReadResourcesFile(resource);
+            //dTOQuran = JsonConvert.DeserializeObject<DTOQuran>(res);
         }
         public DTOQuran GetSoura()
         {
