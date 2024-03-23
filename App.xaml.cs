@@ -1,13 +1,9 @@
-﻿using MosqueMate.Properties;
+﻿using Microsoft.Win32;
+using MosqueMate.Properties;
 using MosqueMateServices.Helper;
 using MosqueMateServices.Interfaces;
 using MosqueMateServices.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
 
 namespace MosqueMate
@@ -30,7 +26,21 @@ namespace MosqueMate
             appData.method = (int)Settings.Default.calculationMethod;
             #endregion
             notificationHelper = new NotificationHelper(Settings.Default.notification);
+            AddApplicationToStartup();
         }
-        
+        public void AddApplicationToStartup()
+        {
+            string appName = "MosqueMate";
+            string appPath = Application.ResourceAssembly.Location.Replace(".dll",".exe");
+            if (File.Exists(appPath))
+            {
+                using (RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true))
+                {
+                    key.SetValue(appName, appPath);
+                }
+            }
+            
+        }
+
     }
 }
