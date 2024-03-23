@@ -45,7 +45,7 @@ namespace MosqueMate
                 #endregion
 
                 #region AppLogo
-                var bitmap = BitmapHelper.ConvertBitmapToBitmapImage(Media.prayer);
+                var bitmap = BitmapHelper.ConvertBitmapToBitmapImage(Media.pray.ToBitmap());
                 appLogo.ImageSource = bitmap;
                 #endregion
 

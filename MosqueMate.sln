@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MosqueMateServices", "Mosqu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MosqueMateMedia", "MosqueMateMedia\MosqueMateMedia.csproj", "{E63A57E8-C269-47CE-ADB7-933F60776EAD}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MosqueMateSetup", "MosqueMateSetup\MosqueMateSetup.vdproj", "{DEAC9E90-0E61-4A67-9CE1-F715519DA9D4}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MosqueMateSetup", "..\MosqueMateSetup\MosqueMateSetup.vdproj", "{2DC5BBA3-4D59-4DD7-9C9F-7A19FC265BAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,8 @@ Global
 		{E63A57E8-C269-47CE-ADB7-933F60776EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E63A57E8-C269-47CE-ADB7-933F60776EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E63A57E8-C269-47CE-ADB7-933F60776EAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEAC9E90-0E61-4A67-9CE1-F715519DA9D4}.Debug|Any CPU.ActiveCfg = Debug
-		{DEAC9E90-0E61-4A67-9CE1-F715519DA9D4}.Debug|Any CPU.Build.0 = Debug
-		{DEAC9E90-0E61-4A67-9CE1-F715519DA9D4}.Release|Any CPU.ActiveCfg = Release
-		{DEAC9E90-0E61-4A67-9CE1-F715519DA9D4}.Release|Any CPU.Build.0 = Release
+		{2DC5BBA3-4D59-4DD7-9C9F-7A19FC265BAA}.Debug|Any CPU.ActiveCfg = Debug
+		{2DC5BBA3-4D59-4DD7-9C9F-7A19FC265BAA}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

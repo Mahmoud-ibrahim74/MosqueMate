@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_FCDA56CE572C4231938558E8AC2709A7"
+        "MsmKey" = "8:_43CCECE0A0A648A5B1B403A18D576881"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -50,6 +50,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -74,6 +82,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -92,6 +108,16 @@
         {
             "LaunchCondition"
             {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_FBE34A5C0BE24333ADF76D32143E1895"
+                {
+                "Name" = "8:.NET Core"
+                "Message" = "8:[VSDNETCOREMSG]"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:https://dotnet.microsoft.com/download/dotnet-core/[NetCoreVerMajorDotMinor]"
+                "IsNETCore" = "11:TRUE"
+                "Architecture" = "2:0"
+                "Runtime" = "2:0"
+                }
             }
         }
         "File"
@@ -301,7 +327,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_FCDA56CE572C4231938558E8AC2709A7"
+            "Target" = "8:"
             "Folder" = "8:_F959C46776BA4712A851997BFB987719"
             "WorkingFolder" = "8:_276013ED443845419F0EE3AA21C7B46D"
             "Icon" = "8:_2367BE54083A4C66B5626ABDF321246F"
@@ -315,7 +341,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_FCDA56CE572C4231938558E8AC2709A7"
+            "Target" = "8:"
             "Folder" = "8:_FE4B70C34E1A4F29AC5AC454E8D93C84"
             "WorkingFolder" = "8:_276013ED443845419F0EE3AA21C7B46D"
             "Icon" = "8:_2367BE54083A4C66B5626ABDF321246F"
@@ -720,9 +746,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FCDA56CE572C4231938558E8AC2709A7"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_43CCECE0A0A648A5B1B403A18D576881"
             {
-            "SourcePath" = "8:..\\MosqueMate\\obj\\Debug\\netcoreapp3.1\\apphost.exe"
+            "SourcePath" = "8:..\\obj\\Debug\\netcoreapp3.1\\MosqueMate.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_276013ED443845419F0EE3AA21C7B46D"
@@ -741,7 +767,7 @@
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:PublishItems"
+            "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{40A67B7B-5282-4D95-A133-D1DFF7DFED66}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
