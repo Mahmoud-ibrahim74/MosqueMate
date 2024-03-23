@@ -1,7 +1,7 @@
 ﻿using MaterialDesignThemes.Wpf;
 using MosqueMate.Pages;
 using MosqueMateServices.Enums;
-using MosqueMateServices.Interfaces;
+using MosqueMateServices.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Effects;
+using System.Xml.Linq;
 using Application = System.Windows.Application;
 using Color = System.Windows.Media.Color;
 using ColorConverter = System.Windows.Media.ColorConverter;
@@ -20,7 +20,6 @@ namespace MosqueMate.Helper.HelperUI
 {
     public class CustomControl
     {
-        private static IHadith hadith;
         public static T ChangeBackForeColors<T>(T originalControl, string backColorCode, string foreColorCode) where T : Control
         {
             Color customBackColor = (Color)ColorConverter.ConvertFromString(backColorCode);
@@ -29,17 +28,17 @@ namespace MosqueMate.Helper.HelperUI
             originalControl.Foreground = new SolidColorBrush(customForeColorCode);
             return originalControl;
         }
-        public static Point GetOffsetChildOfElement<T>(Panel  panel, string childName) where T : ContentControl    
+        public static Point GetOffsetChildOfElement<T>(Panel panel, string childName) where T : ContentControl
         {
-            var point  = new Point();   
+            var point = new Point();
             var result = panel.Children.OfType<T>().Where(x => x.Content.ToString().Contains(childName)).FirstOrDefault();
-            if(result != null)
+            if (result != null)
             {
                 point = result.TranslatePoint(new Point(0, 0), panel);
             }
             else
             {
-                point = new Point(10,10);
+                point = new Point(10, 10);
             }
             return point;
 
@@ -82,17 +81,21 @@ namespace MosqueMate.Helper.HelperUI
         }
         public static void GenerateMaterialCard(Panel panel, List<string> allQuran, RepositoriesTypes types)
         {
+            SuraNamesRepository sura = new SuraNamesRepository();
+
             int marginCount = 20;
             #region Draw_Card
             List<Card> cards = new List<Card>();
             for (int i = 0; i < allQuran.Count; i++)
             {
                 Color customBackColor = (Color)ColorConverter.ConvertFromString("#FF4774A5");
+                var pageIndex = sura.GetSouraPageIndexByName(allQuran[i]);
                 #region Card_Properties
 
                 var card = new Card
                 {
-                    Name = $"card_soura_{i + 1}",
+
+                    Name = types == RepositoriesTypes.Quran ? $"card_soura_{pageIndex}" : $"card_soura_{i + 1}",
                     Background = new SolidColorBrush(customBackColor),
                     Foreground = Brushes.White,
                     Content = allQuran[i],
@@ -116,7 +119,7 @@ namespace MosqueMate.Helper.HelperUI
                 //    Opacity = 0.5,
                 //    Color = Colors.AliceBlue
                 //};
-                card.Clip = clipGeometry;   
+                card.Clip = clipGeometry;
                 marginCount += 150;
                 cards.Add(card);
                 panel.Children.Add(card);
@@ -144,7 +147,7 @@ namespace MosqueMate.Helper.HelperUI
                     if (selectedCard != null)
                     {
                         var souraID = selectedCard.Name.Split('_')[2];
-                        new QuranImageTemplate(Convert.ToInt32(souraID)).ShowDialog();
+                        new QuranImageTemplate(Convert.ToInt32(souraID),QuranMode.Custom).ShowDialog();
                     }
                     break;
                 case RepositoriesTypes.Hadith:

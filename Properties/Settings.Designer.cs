@@ -110,24 +110,12 @@ namespace MosqueMate.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int souraId {
+        public int pageIndex {
             get {
-                return ((int)(this["souraId"]));
+                return ((int)(this["pageIndex"]));
             }
             set {
-                this["souraId"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int ayaId {
-            get {
-                return ((int)(this["ayaId"]));
-            }
-            set {
-                this["ayaId"] = value;
+                this["pageIndex"] = value;
             }
         }
     }

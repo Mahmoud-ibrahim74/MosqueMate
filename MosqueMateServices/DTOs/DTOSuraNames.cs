@@ -11,6 +11,7 @@ namespace MosqueMateServices.DTOs
     public class Surah
     {
         public int index { get; set; }
+        public int pageIndex { get; set; }
         public string name { get; set; }
     }
 }

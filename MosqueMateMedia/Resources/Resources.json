@@ -39,10 +39,20 @@
     "ar": "التطبيق يحتاج الى الإنترنت لكى يعمل , برجاء التحقق من اتصالك بالانترنت وحاول مجددا",
     "fr": "Your App Need Internet to Run, Please Check Your Internet Connection ,then try again"
   },
+  "checkConnction": {
+    "en": "This page need internet to work , please check internet then try again",
+    "ar": "هذه الصفحة تحتاج إلى انترنت كي تعمل برجاء التحقق من اتصالك بالانترنت ثم اعد المحاولة ",
+    "fr": "Cette page a besoin d'Internet pour fonctionner, veuillez vérifier Internet puis réessayer"
+  },
   "GoodEvening": {
     "ar": "مساء الخير",
     "en": "Good Evening",
     "fr": "Bonsoir"
+  },
+  "ContinueReading": {
+    "ar": "أكمل القراءة ",
+    "en": "Continue Reading",
+    "fr": "Continuer la lecture"
   },
   "PrayerTime": {
     "ar": "أوقات الصلاة",

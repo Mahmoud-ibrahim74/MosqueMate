@@ -21,17 +21,25 @@ namespace MosqueMateServices.Repositories
 
         public List<string> GetAllSoura()
         {
-           return DTOSura.Select(x =>x.name).ToList();  
+            return DTOSura.Select(x => x.name).ToList();
         }
 
         public int GetSouraIdByName(string name)
         {
-            return DTOSura.Where(x => x.name.Contains(name)).Select(x=>x.index).FirstOrDefault();
+            return DTOSura.Where(x => x.name.Contains(name)).Select(x => x.index).FirstOrDefault();
         }
 
         public string GetSouraNameById(int id)
         {
             return DTOSura.Where(x => x.index == id).Select(x => x.name).FirstOrDefault();
+        }
+
+        public int GetSouraPageIndexByName(string name)
+        {
+            if (name == "الحج")
+                return 332;
+            else
+                return DTOSura.Where(x => x.name.Contains(name)).Select(x => x.pageIndex).FirstOrDefault();
         }
     }
 }

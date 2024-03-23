@@ -1,83 +1,75 @@
 ﻿using MosqueMate.Helper;
 using MosqueMate.Helper.HelperUI;
-using MosqueMate.Properties;
 using MosqueMateMedia.Properties;
 using MosqueMateServices.AppResources;
-using MosqueMateServices.Context;
 using MosqueMateServices.Helper;
+using MosqueMateServices.Helper.API;
 using MosqueMateServices.Interfaces;
 using MosqueMateServices.Repositories;
+using Newtonsoft.Json;
+using PrayIDataServices.Helper.API;
 using System;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace MosqueMate
 {
     public partial class MainWindow : Window
     {
-        INotificationWindows notification;
         IAppData appData;
-        IZekr zekr;
-        private int zekrId = 1;
-        private int ZekrIndex = 1;
-        private IAudioPlayer audioPlayer;
         public bool isPanelShow { get; private set; }
-
         public MainWindow()
         {
             InitializeComponent();
-            //TimeInterval();
-            notification = new NotificationHelper(Settings.Default.notification);
             appData = AppDataRepo.Instance;
-            zekr = new ZekrRepository();
+            API.url = "https://api.aladhan.com/v1/timingsByCity/{DateTime.Now:dd-MM-yyyy}?" + $"city={appData.City}&country={appData.Country}&method={appData.method}";
         }
 
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            BackgroundTask.ExecuteNormalTask(() =>
+            using (ResourceJsonRepo resource = new ResourceJsonRepo())
             {
+                #region ControlFilling
+                CustomControl.SetAppFont(this);
+                this.Title = resource["AppName"];
+                this.appTitle.Text = resource["AppName"];
+                homeLBL.Text = resource["SideBar.Home"];
+                closeAppLBL.Text = resource["CloseApp"];
+                minimizeText.Text = resource["minimize"];
+                SettingsLBL.Text = resource["SideBar.Settings"];
+                contactUsTxt.Text = resource["SideBar.contactUs"];
+                AdhkarText.Text = resource["SideBar.Adhkar"];
+                quranText.Text = resource["SideBar.Quran"];
+                hadithTxt.Text = resource["Hadith"];
+                #endregion
 
-            });
-            BackgroundTask.ExecuteThreadUI(() =>
+                #region AppLogo
+                var bitmap = BitmapHelper.ConvertBitmapToBitmapImage(Media.prayer);
+                appLogo.ImageSource = bitmap;
+                #endregion
+
+            }
+
+            BackgroundTask.ExecuteNormalTask(async () =>
             {
-                using (ResourceJsonRepo resource = new ResourceJsonRepo())
+                if (await SendApiRequest())
                 {
-                    #region ControlFilling
-                    CustomControl.SetAppFont(this);
-                    this.Title = resource["AppName"];
-                    this.appTitle.Text = resource["AppName"];
-                    homeLBL.Text = resource["SideBar.Home"];
-                    closeAppLBL.Text = resource["CloseApp"];
-                    minimizeText.Text = resource["minimize"];
-                    SettingsLBL.Text = resource["SideBar.Settings"];
-                    contactUsTxt.Text = resource["SideBar.contactUs"];
-                    AdhkarText.Text = resource["SideBar.Adhkar"];
-                    quranText.Text = resource["SideBar.Quran"];
-                    hadithTxt.Text = resource["Hadith"];
-                    #endregion
-
-                    #region AppLogo
-                    var bitmap = BitmapHelper.ConvertBitmapToBitmapImage(Media.prayer);
-                    appLogo.ImageSource = bitmap;
-                    #endregion
-
+                    BackgroundTask.ExecuteThreadUI(() =>
+                    {
+                        PagesNavigation.Navigate(new Uri("Pages/Home.xaml", UriKind.RelativeOrAbsolute));
+                    });
                 }
-                //TimeInterval();
-                PagesNavigation.Navigate(new Uri("Pages/Home.xaml", UriKind.RelativeOrAbsolute));
+                else
+                {
+                    using NotificationHelper notification = new NotificationHelper(true);
+                    using ResourceJsonRepo resource = new ResourceJsonRepo();
+                    notification.ShowNotification("Error", resource["checkConnction"], System.Windows.Forms.ToolTipIcon.Error);
+                    return;
+                }
+
             });
         }
-
-        //private void TimeInterval()
-        //{
-        //    BackgroundTask.RunTaskWithWhile(1000, () =>
-        //    {
-        //        timeCLock.Content = DateTime.Now.ToString("hh:mm:ss tt");
-        //        using ResourceJsonRepo resource = new ResourceJsonRepo();
-        //        georgianDate.Content = DateTimeHelper.georgianDate;
-        //        hijriDate.FlowDirection = Settings.Default.currentLang == "en" ? FlowDirection.LeftToRight : FlowDirection.RightToLeft;
-        //        hijriDate.Content = DateTimeHelper.hijriDate;
-        //    });
-        //}
         private void closeAppBTN_Click(object sender, RoutedEventArgs e)
         {
             using ResourceJsonRepo resource = new ResourceJsonRepo();
@@ -93,8 +85,24 @@ namespace MosqueMate
         }
         private void homeBtn_Click(object sender, RoutedEventArgs e)
         {
-            PagesNavigation.Navigate(new Uri("Pages/home.xaml", UriKind.RelativeOrAbsolute));
+            BackgroundTask.ExecuteNormalTask(() =>
+            {
+                if (appData.API_DATA != null)
+                {
+                    BackgroundTask.ExecuteThreadUI(() =>
+                    {
+                        PagesNavigation.Navigate(new Uri("Pages/Home.xaml", UriKind.RelativeOrAbsolute));
+                    });
+                }
+                else
+                {
+                    using NotificationHelper notification = new NotificationHelper(true);
+                    using ResourceJsonRepo resource = new ResourceJsonRepo();
+                    notification.ShowNotification("Error", resource["checkConnction"], System.Windows.Forms.ToolTipIcon.Error);
+                    return;
+                }
 
+            });
         }
         private void settingsBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -121,6 +129,24 @@ namespace MosqueMate
         {
             PagesNavigation.Navigate(new Uri("Pages/Hadith.xaml", UriKind.RelativeOrAbsolute));
 
+        }
+        private async Task<bool> SendApiRequest()
+        {
+            #region API_Data
+            var responce = await API.GetMethodAsync();
+            if (responce != null && API.HttpException == null)
+            {
+
+                #region SendRequestAPI
+                var desrialize = JsonConvert.DeserializeObject<PrayerTimesResponse>(responce);
+                appData.API_DATA = desrialize;
+                #endregion
+                return true;
+            }
+            else
+                return false;
+
+            #endregion
         }
     }
 }

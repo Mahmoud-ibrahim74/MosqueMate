@@ -1,8 +1,11 @@
 ﻿using MaterialDesignThemes.Wpf;
 using MosqueMate.Helper;
 using MosqueMate.Helper.HelperUI;
+using MosqueMateServices.AppResources;
+using MosqueMateServices.Enums;
 using MosqueMateServices.Interfaces;
 using MosqueMateServices.Repositories;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -22,6 +25,8 @@ namespace MosqueMate.Pages
         {
             var result = soura.GetAllSoura();
             BackgroundTask.ExecuteThreadUI(() => CustomControl.GenerateMaterialCard(quranGridContainer, result,MosqueMateServices.Enums.RepositoriesTypes.Quran), this);
+            using ResourceJsonRepo resource = new ResourceJsonRepo();
+            continueReading.ToolTip = resource["ContinueReading"];
         }
 
         private void searchInQuran_TextChanged(object sender, TextChangedEventArgs e)
@@ -37,6 +42,11 @@ namespace MosqueMate.Pages
                     quranGridScroll.ScrollToVerticalOffset(relativePoint.Y - 300); // get position of searched card
                 }
             }
+        }
+
+        private void continueReading_Click(object sender, RoutedEventArgs e)
+        {
+            new QuranImageTemplate(0, QuranMode.Completion).ShowDialog();
         }
     }
 }

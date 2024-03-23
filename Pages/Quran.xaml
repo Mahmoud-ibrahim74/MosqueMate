@@ -19,11 +19,13 @@
                     <GradientStop Color="#2C386C" Offset="1" />
                 </LinearGradientBrush>
             </Grid.Background>
-
-            <TextBox x:Name="searchInQuran" Margin="82,10,119,10"  TextChanged="searchInQuran_TextChanged" Foreground="White" FontSize="20"  BorderThickness="1" BorderBrush="#89EEE5E5"></TextBox>
-            <materialDesign:PackIcon  Height="48" Width="45" Kind="Search" Margin="846,0,0,0" VerticalAlignment="Center"></materialDesign:PackIcon>
+            <Button x:Name="continueReading" Margin="857,16,53,13" Height="50" Click="continueReading_Click">
+                <materialDesign:PackIcon  Height="38" Width="33" Kind="ReadMore"  VerticalAlignment="Center"></materialDesign:PackIcon>
+            </Button>
+            <TextBox x:Name="searchInQuran" Margin="82,10,257,10"  TextChanged="searchInQuran_TextChanged" Foreground="White" FontSize="20"  BorderThickness="1" BorderBrush="#89EEE5E5"></TextBox>
+            <materialDesign:PackIcon  Height="48" Width="45" Kind="TextSearch" Margin="712,0,0,0" VerticalAlignment="Center"></materialDesign:PackIcon>
         </Grid>
-    <ScrollViewer x:Name="quranGridScroll" Margin="0,79,0,0">
+        <ScrollViewer x:Name="quranGridScroll" Margin="0,79,0,0">
             <Grid x:Name="quranGridContainer">
                 <Grid.Background>
                     <LinearGradientBrush >
@@ -32,6 +34,6 @@
                     </LinearGradientBrush>
                 </Grid.Background>
             </Grid>
-    </ScrollViewer>
+        </ScrollViewer>
     </Grid>
 </Page>

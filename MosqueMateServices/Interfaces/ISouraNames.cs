@@ -9,6 +9,7 @@ namespace MosqueMateServices.Interfaces
     {
         public string GetSouraNameById(int id);
         public int GetSouraIdByName(string name);
+        public int GetSouraPageIndexByName(string name);
         public List<string> GetAllSoura();
     }
 }

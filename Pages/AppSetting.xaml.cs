@@ -9,7 +9,6 @@ using MosqueMateServices.Repositories;
 using System;
 using System.Diagnostics;
 using System.Linq;
-using System.Media;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -84,43 +83,6 @@ namespace MosqueMate.Pages
 
         private void SaveSetting_Click(object sender, RoutedEventArgs e)
         {
-            using ResourceJsonRepo resourcesJson = new ResourceJsonRepo();
-
-            #region Validation
-            if (rdArabic.IsChecked == false && rdEnglish.IsChecked == false && rdFrench.IsChecked == false)
-            {
-                notification.ShowNotification("Error", resourcesJson["SettingValidations.rdLang"], System.Windows.Forms.ToolTipIcon.Error);
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(sheckihSelection.SelectedValue.ToString()))
-            {
-                notification.ShowNotification("Error", resourcesJson["SettingValidations.rdCombo"], System.Windows.Forms.ToolTipIcon.Error);
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(countryBox.SelectedValue.ToString()))
-            {
-                notification.ShowNotification("Error", resourcesJson["SettingValidations.rdCountryCombo"], System.Windows.Forms.ToolTipIcon.Error);
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(citiesBox.SelectedValue.ToString()))
-            {
-                notification.ShowNotification("Error", resourcesJson["SettingValidations.rdCityCombo"], System.Windows.Forms.ToolTipIcon.Error);
-
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(methodBox.SelectedValue.ToString()))
-            {
-                notification.ShowNotification("Error", resourcesJson["SettingValidations.rdCountryCombo"], System.Windows.Forms.ToolTipIcon.Error);
-                return;
-            }
-            #endregion
-            else
-            {
-                SaveSettings();
-            }
-        }
-        private void SaveSettings()
-        {
             try
             {
                 using ResourceJsonRepo resourcesJson = new ResourceJsonRepo();
@@ -166,6 +128,10 @@ namespace MosqueMate.Pages
             {
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
             }
+
+        }
+        private void SaveSettings()
+        {
         }
 
         private void sheckihSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)

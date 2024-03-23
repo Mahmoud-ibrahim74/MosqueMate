@@ -12,7 +12,7 @@
         <RectangleGeometry Rect="0,0,500,700" RadiusX="15" RadiusY="15"></RectangleGeometry>
     </Window.Clip>
     <!--Main Section-->
-    <Grid x:Name="quranGridContainer" Background="#FF39476B" MouseWheel="quranGridContainer_MouseWheel" >
+    <Grid x:Name="quranGridContainer" Background="#FF39476B"  >
         <Image x:Name="pageImage" Stretch="Fill" Width="500"  />
         <Button x:Name="closeWindow" Background="{x:Null}" BorderBrush="{x:Null}" Panel.ZIndex="1" Foreground="Black" BorderThickness="0" Click="closeWindow_Click" Content="x" Margin="211,0,250,668"/>
 

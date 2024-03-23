@@ -7,11 +7,8 @@ using MosqueMateServices.Context;
 using MosqueMateServices.DTOs;
 using MosqueMateServices.Enums;
 using MosqueMateServices.Helper;
-using MosqueMateServices.Helper.API;
 using MosqueMateServices.Interfaces;
 using MosqueMateServices.Repositories;
-using Newtonsoft.Json;
-using PrayIDataServices.Helper.API;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -34,14 +31,12 @@ namespace MosqueMate.Pages
         PrayerTimesEnum prayerNowEnum;
         public bool isPanelShow { get; private set; }
         private bool showPrayerTimeNow { get; set; } = true;
-        private readonly API aPI;
         private List<DTOAzkar> zekrTime;
         public home()
         {
             InitializeComponent();
             notification = new NotificationHelper(Settings.Default.notification);
             appData = AppDataRepo.Instance;
-            API.url = "https://api.aladhan.com/v1/timingsByCity/{DateTime.Now:dd-MM-yyyy}?" + $"city={appData.City}&country={appData.Country}&method={appData.method}";
             this.zekr = new ZekrRepository();
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -58,7 +53,7 @@ namespace MosqueMate.Pages
         {
 
             PrayerTimeLeftAsync();
-            BackgroundTask.ExecuteThreadUI(async () =>
+            BackgroundTask.ExecuteThreadUI(() =>
             {
 
                 using (ResourceJsonRepo resource = new ResourceJsonRepo())
@@ -71,6 +66,7 @@ namespace MosqueMate.Pages
                         hyperlinkText.Text = resource["UpdateAviliable"];
                     }
                     #endregion
+
                     #region Prayer_Resources.json
                     prayersMenuLBL.Text = resource["PrayerTime"];
                     fajrItem.Title = resource[$"prayerTimes.{PrayerTimesEnum.Fajr}"];
@@ -81,58 +77,7 @@ namespace MosqueMate.Pages
                     ishaItem.Title = resource[$"prayerTimes.{PrayerTimesEnum.Isha}"];
                     #endregion
 
-                    if (appData.API_DATA == null)
-                    {
-                        #region API_Data
-                        var responce = await API.GetMethodAsync();
-                        if (responce != null)
-                        {
-
-                            #region SendRequestAPI
-                            var desrialize = JsonConvert.DeserializeObject<PrayerTimesResponse>(responce);
-                            appData.API_DATA = desrialize;
-                            double latitude = desrialize.Data.Meta.Latitude;
-                            double longtuide = desrialize.Data.Meta.Longitude;
-                            API.url = $"https://api.aladhan.com/v1/qibla/{latitude}/{longtuide}";
-                            var direction = JsonConvert.DeserializeObject<QiblaAPI>(await API.GetMethodAsync());
-
-                            #endregion
-
-                            #region SetPrayerTimes
-                            fajrItem.Desc = desrialize.Data.Timings.Fajr.ToString("hh:mm tt");
-                            sunraiseItem.Desc = desrialize.Data.Timings.Sunrise.ToString("hh:mm tt");
-                            duhrItem.Desc = desrialize.Data.Timings.Dhuhr.ToString("hh:mm tt");
-                            asrItem.Desc = desrialize.Data.Timings.Asr.ToString("hh:mm tt");
-                            magribItem.Desc = desrialize.Data.Timings.Maghrib.ToString("hh:mm tt");
-
-                            ishaItem.Desc = desrialize.Data.Timings.Isha.ToString("hh:mm tt");
-                            #endregion
-
-                            #region CastAPI_Data
-                            var nextPrayerEnum = DateTimeHelper.GetNextPrayer(desrialize.Data.Timings);
-                            DateTimeHelper.hijriDate = Settings.Default.currentLang == "ar" ?
-                            desrialize.Data.Date.Hijri.Day + " - " +
-                            desrialize.Data.Date.Hijri.Month.Arabic + "-" +
-                            desrialize.Data.Date.Hijri.Year
-                            :
-                            desrialize.Data.Date.Hijri.Day + "-" +
-                            desrialize.Data.Date.Hijri.Month.English + "-" + desrialize.Data.Date.Hijri.Year;
-                            prayerNowEnum = nextPrayerEnum;
-
-                            #endregion
-
-                            #region DateCard
-                            hijriDateCard.Number = DateTimeHelper.ArabicDayName(Settings.Default.currentLang);
-                            hijriDateCard.Title = DateTimeHelper.hijriDate;
-                            #endregion
-                        }
-                        else
-                        {
-                            notification.ShowNotification("Error", resource["InternetTimeout"], System.Windows.Forms.ToolTipIcon.Error);
-                        }
-                        #endregion
-                    }
-                    else
+                    if (appData.API_DATA != null)
                     {
                         #region SetPrayerTimes
                         fajrItem.Desc = appData.API_DATA.Data.Timings.Fajr.ToString("hh:mm tt");
@@ -145,27 +90,23 @@ namespace MosqueMate.Pages
                         #endregion
 
                         #region CastAPI_Data
-                        DateTimeHelper.georgianDate = appData.API_DATA.Data.Date.Gregorian.Date;
+                        var nextPrayerEnum = DateTimeHelper.GetNextPrayer(appData.API_DATA.Data.Timings);
                         DateTimeHelper.hijriDate = Settings.Default.currentLang == "ar" ?
-                        appData.API_DATA.Data.Date.Hijri.Year + " - (" +
-                        appData.API_DATA.Data.Date.Hijri.Month.Arabic + ")" +
-                        appData.API_DATA.Data.Date.Hijri.Day :
+                        appData.API_DATA.Data.Date.Hijri.Day + " - " +
+                        appData.API_DATA.Data.Date.Hijri.Month.Arabic + "-" +
+                        appData.API_DATA.Data.Date.Hijri.Year
+                        :
                         appData.API_DATA.Data.Date.Hijri.Day + "-" +
                         appData.API_DATA.Data.Date.Hijri.Month.English + "-" + appData.API_DATA.Data.Date.Hijri.Year;
-                        var nextPrayerEnum = DateTimeHelper.GetNextPrayer(appData.API_DATA.Data.Timings);
                         prayerNowEnum = nextPrayerEnum;
-                        timeLeftCard.Title = DateTimeHelper.GetSubPrayers() == null ? resource["TimeLeft"] + " : " : resource["TimeLeft"];
-                        timeLeftCard.Number = DateTimeHelper.GetSubPrayers();
+
                         #endregion
 
                         #region DateCard
                         hijriDateCard.Number = DateTimeHelper.ArabicDayName(Settings.Default.currentLang);
                         hijriDateCard.Title = DateTimeHelper.hijriDate;
                         #endregion
-
                     }
-
-
                     AdhanStatus();
 
                 }
