@@ -35,7 +35,7 @@ namespace MosqueMate.Pages
         public home()
         {
             InitializeComponent();
-            notification = new NotificationHelper(Settings.Default.notification);
+            notification = new NotificationWindows(Settings.Default.notification);
             appData = AppDataRepo.Instance;
             this.zekr = new ZekrRepository();
         }

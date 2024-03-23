@@ -7,5 +7,6 @@ namespace MosqueMateServices.Interfaces
     {
         public void ShowNotification(string title, string message, ToolTipIcon icon);
         public void ShowUpdateNotification();
+        public void ShowWithAction();
     }
 }

@@ -116,7 +116,7 @@ namespace MosqueMate.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(false);
+                using NotificationWindows notification = new NotificationWindows(false);
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
             }
         }
@@ -138,7 +138,7 @@ namespace MosqueMate.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(false);
+                using NotificationWindows notification = new NotificationWindows(false);
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
                 page.IsEnabled = true;
 
@@ -167,7 +167,7 @@ namespace MosqueMate.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(Settings.Default.notification);
+                using NotificationWindows notification = new NotificationWindows(Settings.Default.notification);
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
             }
             finally
@@ -193,7 +193,7 @@ namespace MosqueMate.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(false);
+                using NotificationWindows notification = new NotificationWindows(false);
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
                 control.IsEnabled = false;
             }
@@ -216,7 +216,7 @@ namespace MosqueMate.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(false);
+                using NotificationWindows notification = new NotificationWindows(false);
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
             }
         }
@@ -236,7 +236,7 @@ namespace MosqueMate.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(false);
+                using NotificationWindows notification = new NotificationWindows(false);
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
                 control.IsEnabled = true;
             }
@@ -260,7 +260,7 @@ namespace MosqueMate.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(false);
+                using NotificationWindows notification = new NotificationWindows(false);
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
                 page.IsEnabled = true;
             }

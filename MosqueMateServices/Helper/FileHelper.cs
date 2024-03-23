@@ -38,7 +38,7 @@ namespace MosqueMateServices.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(false);
+                using NotificationWindows notification = new NotificationWindows(false);
                 notification.ShowNotification("ERROR", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
             }
             return true;
@@ -55,7 +55,7 @@ namespace MosqueMateServices.Helper
             }
             catch (Exception ex)
             {
-                using NotificationHelper notification = new NotificationHelper(false);
+                using NotificationWindows notification = new NotificationWindows(false);
                 notification.ShowNotification("ERROR", ex.Message, ToolTipIcon.Error);
             }
         }

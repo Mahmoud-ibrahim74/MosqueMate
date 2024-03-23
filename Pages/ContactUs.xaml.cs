@@ -25,7 +25,7 @@ namespace MosqueMate.Pages
         {
             InitializeComponent();
             appData = AppDataRepo.Instance;
-            notification = new NotificationHelper(Settings.Default.notification);
+            notification = new NotificationWindows(Settings.Default.notification);
 
         }
 

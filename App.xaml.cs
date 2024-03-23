@@ -14,7 +14,7 @@ namespace MosqueMate
     public partial class App : Application
     {
         private readonly IAppData appData;
-        INotificationWindows notificationHelper;
+        INotificationWindows NotificationWindows;
         public App()
         {
 
@@ -25,7 +25,7 @@ namespace MosqueMate
             appData.Country = Settings.Default.Country;
             appData.method = (int)Settings.Default.calculationMethod;
             #endregion
-            notificationHelper = new NotificationHelper(Settings.Default.notification);
+            NotificationWindows = new NotificationWindows(Settings.Default.notification);
             AddApplicationToStartup();
         }
         public void AddApplicationToStartup()

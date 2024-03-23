@@ -25,7 +25,7 @@ namespace MosqueMate.Pages
         {
             InitializeComponent();
             appData = AppDataRepo.Instance;
-            notification = new NotificationHelper(Settings.Default.notification);
+            notification = new NotificationWindows(Settings.Default.notification);
 
         }
 
@@ -121,7 +121,7 @@ namespace MosqueMate.Pages
                     ) == MessageBoxResult.Yes)
                 {
                     Settings.Default.Save();
-                    RestartApp();
+                    AppHelper.RestartApp();
                 }
             }
             catch (Exception ex)
@@ -129,9 +129,6 @@ namespace MosqueMate.Pages
                 notification.ShowNotification("Error", ex.Message, System.Windows.Forms.ToolTipIcon.Error);
             }
 
-        }
-        private void SaveSettings()
-        {
         }
 
         private void sheckihSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -171,14 +168,14 @@ namespace MosqueMate.Pages
 
         private void Page_Unloaded(object sender, RoutedEventArgs e)
         {
-           
+
         }
-        private void RestartApp()
-        {
-            var currentExecutablePath = Process.GetCurrentProcess().MainModule.FileName;
-            Process.Start(currentExecutablePath);
-            Application.Current.Shutdown();
-        }
+        //private void RestartApp()
+        //{
+        //    var currentExecutablePath = Process.GetCurrentProcess().MainModule.FileName;
+        //    Process.Start(currentExecutablePath);
+        //    Application.Current.Shutdown();
+        //}
 
     }
 }

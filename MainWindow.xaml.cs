@@ -62,7 +62,7 @@ namespace MosqueMate
                 }
                 else
                 {
-                    using NotificationHelper notification = new NotificationHelper(true);
+                    using NotificationWindows notification = new NotificationWindows(true,()=>AppHelper.RestartApp());
                     using ResourceJsonRepo resource = new ResourceJsonRepo();
                     notification.ShowNotification("Error", resource["checkConnction"], System.Windows.Forms.ToolTipIcon.Error);
                     return;
@@ -96,7 +96,7 @@ namespace MosqueMate
                 }
                 else
                 {
-                    using NotificationHelper notification = new NotificationHelper(true);
+                    using NotificationWindows notification = new NotificationWindows(true);
                     using ResourceJsonRepo resource = new ResourceJsonRepo();
                     notification.ShowNotification("Error", resource["checkConnction"], System.Windows.Forms.ToolTipIcon.Error);
                     return;

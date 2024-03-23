@@ -2,26 +2,49 @@
 using MosqueMateServices.AppResources;
 using MosqueMateServices.Interfaces;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace MosqueMateServices.Helper
 {
-    public class NotificationHelper : INotificationWindows, IDisposable
+    public class NotificationWindows : INotificationWindows, IDisposable
     {
         private readonly NotifyIcon _notifyIcon;
         private bool isShowOne = true;
         private bool notifySetting;
-        public NotificationHelper(bool notifySetting)
+        ContextMenuStrip contextmenuStrip;
+        ToolStripMenuItem StripMenuItemClose;
+        ToolStripMenuItem StripMenuIteAction;
+        Action action;
+        public NotificationWindows(bool notifySetting, Action action = null)
         {
             _notifyIcon = new NotifyIcon();
-            _notifyIcon.Icon = Media.prayerICO;
+            _notifyIcon.Icon = Media.pray;
             _notifyIcon.Visible = true;
             this.notifySetting = notifySetting;
-            _notifyIcon.BalloonTipClicked += _notifyIcon_BalloonTipClicked;
-            _notifyIcon.Click += _notifyIcon_Click;
-            _notifyIcon.MouseClick += _notifyIcon_MouseClick;
-            _notifyIcon.DoubleClick += _notifyIcon_DoubleClick;
+            contextmenuStrip = new ContextMenuStrip();
+            StripMenuItemClose = new ToolStripMenuItem("Close");
+            StripMenuIteAction = new ToolStripMenuItem("Restart App");
+            StripMenuIteAction.Click += StripMenuIteAction_Click;
+            StripMenuItemClose.Click += StripMenuItem_Click;
+            contextmenuStrip.Items.Add(StripMenuIteAction);
+            contextmenuStrip.Items.Add(StripMenuItemClose);
+            _notifyIcon.ContextMenuStrip = contextmenuStrip;
+
+
+            this.action = action;
+        }
+
+        private void StripMenuIteAction_Click(object sender, EventArgs e)
+        {
+
+            AppHelper.RestartApp();
+        }
+
+        private void StripMenuItem_Click(object sender, EventArgs e)
+        {
+            _notifyIcon.Dispose();
         }
 
         public void ShowNotification(string title, string message, ToolTipIcon icon)
@@ -44,9 +67,10 @@ namespace MosqueMateServices.Helper
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        public void Dispose()
+        public new void Dispose()
         {
-            //_notifyIcon.Dispose();
+            _notifyIcon.Dispose();
+
         }
 
         public void ShowUpdateNotification()
@@ -73,26 +97,9 @@ namespace MosqueMateServices.Helper
             }
         }
 
-        private void _notifyIcon_DoubleClick(object sender, EventArgs e)
+        public void ShowWithAction()
         {
-            Console.WriteLine("J");
-        }
 
-        private void _notifyIcon_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-                Console.WriteLine("J");
-
-        }
-
-        private void _notifyIcon_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("J");
-        }
-
-        private void _notifyIcon_BalloonTipClicked(object sender, EventArgs e)
-        {
-            WinFormHelper.OpenAppLink("https://github.com/Mahmoud-ibrahim74");
         }
     }
 }
