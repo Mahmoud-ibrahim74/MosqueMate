@@ -22,7 +22,7 @@ namespace MosqueMate
         {
             InitializeComponent();
             appData = AppDataRepo.Instance;
-            API.url = "https://api.aladhan.com/v1/timingsByCity/{DateTime.Now:dd-MM-yyyy}?" + $"city={appData.City}&country={appData.Country}&method={appData.method}";
+            API.url = $"https://api.aladhan.com/v1/timingsByCity/{DateTime.Now:dd-MM-yyyy}?" + $"city={appData.City}&country={appData.Country}&method={appData.method}";
         }
 
 
@@ -51,14 +51,11 @@ namespace MosqueMate
 
             }
 
-            BackgroundTask.ExecuteNormalTask(async () =>
+            BackgroundTask.ExecuteThreadUI(async () =>
             {
                 if (await SendApiRequest())
                 {
-                    BackgroundTask.ExecuteThreadUI(() =>
-                    {
-                        PagesNavigation.Navigate(new Uri("Pages/Home.xaml", UriKind.RelativeOrAbsolute));
-                    });
+                    PagesNavigation.Navigate(new Uri("Pages/Home.xaml", UriKind.RelativeOrAbsolute));
                 }
                 else
                 {
@@ -68,7 +65,7 @@ namespace MosqueMate
                     return;
                 }
 
-            });
+            },this);
         }
         private void closeAppBTN_Click(object sender, RoutedEventArgs e)
         {
