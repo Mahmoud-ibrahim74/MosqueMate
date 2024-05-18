@@ -7,7 +7,6 @@ using MosqueMateServices.Helper;
 using MosqueMateServices.Interfaces;
 using MosqueMateServices.Repositories;
 using System;
-using System.Diagnostics;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -44,11 +43,13 @@ namespace MosqueMate.Pages
                 //SaveSetting.Content = resourcesJson["Save"];
                 countryLBL.Content = resourcesJson["countryLBL"];
                 methodLBL.Content = resourcesJson["calculationMethod"];
+                autoStartLBL.Content = resourcesJson["autoStartUp"];
                 notificationLBL.Content = resourcesJson["notificationLBL"];
                 notificationDesc.Text = resourcesJson["notificationDesc"];
                 SaveSetting.Content = resourcesJson["Save"];
-                notificationToggle.IsChecked = Settings.Default.notification ? true : false;
+                notificationToggle.IsChecked = Settings.Default.notification;
                 notificationDesc.TextAlignment = Settings.Default.currentLang == "en" ? TextAlignment.Right : TextAlignment.Left;
+                autoStartUp.IsChecked = Settings.Default.autoStartUp;
                 switch (Settings.Default.currentLang)
                 {
                     case "en":
@@ -112,6 +113,7 @@ namespace MosqueMate.Pages
                 Settings.Default["calculationMethod"] = (int)index;
                 var notifycheckedState = (bool)notificationToggle.IsChecked;
                 Settings.Default["notification"] = notifycheckedState;
+                Settings.Default["autoStartUp"] = autoStartUp.IsChecked;
                 #endregion
 
                 if (MessageBox.Show(resourcesJson["RestartAppWarning"],

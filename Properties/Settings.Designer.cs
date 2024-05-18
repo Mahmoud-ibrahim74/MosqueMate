@@ -118,5 +118,17 @@ namespace MosqueMate.Properties {
                 this["pageIndex"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool autoStartUp {
+            get {
+                return ((bool)(this["autoStartUp"]));
+            }
+            set {
+                this["autoStartUp"] = value;
+            }
+        }
     }
 }

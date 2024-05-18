@@ -74,7 +74,10 @@
 
         <materialDesign:Card Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="4"  Background="#FF3B4E8A" Margin="5,6,5,5">
             <Grid>
-                <ComboBox x:Name="methodBox"  Margin="5,0,10,0" Height="82" FontSize="20" ></ComboBox>
+                <ComboBox x:Name="methodBox"  Margin="5,0,434,0" Height="82" FontSize="20" ></ComboBox>
+                <ToggleButton x:Name="autoStartUp"  Margin="745,0,44,0" Width="50" Background="#FF2673C7" Foreground="#FF2673C7" Checked="notificationToggle_Checked" Unchecked="notificationToggle_Unchecked"></ToggleButton>
+                <Label x:Name="autoStartLBL" FontSize="15" Grid.Column="0" FontWeight="Bold" Padding="5" Margin="516,22,111,22" Foreground="White">...</Label>
+
             </Grid>
 
         </materialDesign:Card>

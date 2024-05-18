@@ -34,6 +34,11 @@
     "ar": "تصغير",
     "fr": "minimiser"
   },
+  "autoStartUp": {
+    "ar": "بدء التشغيل التلقائي",
+    "en": "Auto StartUp",
+    "fr": "Démarrage automatique"
+  },
   "InternetTimeout": {
     "en": "Your App Need Internet to Run, Please Check Your Internet Connection ,then try again",
     "ar": "التطبيق يحتاج الى الإنترنت لكى يعمل , برجاء التحقق من اتصالك بالانترنت وحاول مجددا",
