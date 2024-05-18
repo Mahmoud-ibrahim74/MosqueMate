@@ -441,6 +441,11 @@
     "en": "A new update is available.",
     "fr": "Une nouvelle mise à jour est disponible. "
   },
+  "checkForUpdate": {
+    "ar": "التحقق من  تحديث  جديد",
+    "en": "Check new update is available",
+    "fr": "Une nouvelle mise à jour est disponible. "
+  },
   "PlaySoura": {
     "ar": "الإستماع إلى السورة",
     "en": "Listin to soura",

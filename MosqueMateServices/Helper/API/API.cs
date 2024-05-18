@@ -1,31 +1,31 @@
-﻿using System;
+﻿using MosqueMateServices.Interfaces;
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace MosqueMateServices.Helper.API
 {
-    public class API
+    public class API : IAPI
     {
-        private static readonly HttpClient _httpClient = new HttpClient();
-        public static string url { get; set; }
-        public static string HttpException { get; set; }
-        
-        public static async Task<string> GetMethodAsync()
+        private readonly HttpClient _httpClient;
+        public API(string url)
+        {
+            _httpClient = new HttpClient
+            {
+                BaseAddress = new Uri(url)
+            };
+        }
+
+        public Task<string> GetAsync()
         {
             try
             {
-                var responce = await _httpClient.GetAsync(url);
-                if (responce.IsSuccessStatusCode)
-                {
-                    return await responce.Content.ReadAsStringAsync();
-                }
+                return _httpClient.GetStringAsync(_httpClient.BaseAddress);
             }
-            catch (HttpRequestException ex)
+            catch (HttpRequestException)
             {
-                HttpException =  ex.Message;
                 return null;
             }
-            return null;
         }
     }
 }

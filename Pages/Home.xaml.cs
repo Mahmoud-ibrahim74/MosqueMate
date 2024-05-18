@@ -34,10 +34,11 @@ namespace MosqueMate.Pages
         private List<DTOAzkar> zekrTime;
         public home()
         {
+            appData = AppDataRepo.Instance;
             InitializeComponent();
             notification = new NotificationWindows(Settings.Default.notification);
-            appData = AppDataRepo.Instance;
             this.zekr = new ZekrRepository();
+
         }
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
@@ -47,6 +48,7 @@ namespace MosqueMate.Pages
             var result = currentTime > ninePMToday ? "المساء" : "الصباح";
             zekrTime = zekr.GetZekrByName(result);
             #endregion
+
             LoadPage();
         }
         private void LoadPage()
@@ -55,18 +57,17 @@ namespace MosqueMate.Pages
             PrayerTimeLeftAsync();
             BackgroundTask.ExecuteThreadUI(() =>
             {
-
-                using (ResourceJsonRepo resource = new ResourceJsonRepo())
+                using ResourceJsonRepo resource = new ResourceJsonRepo();
+                //#region CheckForUpdate
+                //var isUpdated = new AppDbContext().SelectVersionUpdate();
+                //if (isUpdated)
+                //{
+                //    updateAppLink.Visibility = Visibility.Visible;
+                //    hyperlinkText.Text = resource["UpdateAviliable"];
+                //}
+                //#endregion
+                if (appData.API_DATA != null)
                 {
-                    #region CheckForUpdate
-                    var isUpdated = new AppDbContext().SelectVersionUpdate();
-                    if (isUpdated)
-                    {
-                        updateAppLink.Visibility = Visibility.Visible;
-                        hyperlinkText.Text = resource["UpdateAviliable"];
-                    }
-                    #endregion
-
                     #region Prayer_Resources.json
                     prayersMenuLBL.Text = resource["PrayerTime"];
                     fajrItem.Title = resource[$"prayerTimes.{PrayerTimesEnum.Fajr}"];
@@ -76,40 +77,36 @@ namespace MosqueMate.Pages
                     magribItem.Title = resource[$"prayerTimes.{PrayerTimesEnum.Maghrib}"];
                     ishaItem.Title = resource[$"prayerTimes.{PrayerTimesEnum.Isha}"];
                     #endregion
+                    hyperlinkText.Text = resource[$"checkForUpdate"];
+                    #region SetPrayerTimes
+                    fajrItem.Desc = appData.API_DATA.Data.Timings.Fajr.ToString("hh:mm tt");
+                    sunraiseItem.Desc = appData.API_DATA.Data.Timings.Sunrise.ToString("hh:mm tt");
+                    duhrItem.Desc = appData.API_DATA.Data.Timings.Dhuhr.ToString("hh:mm tt");
+                    asrItem.Desc = appData.API_DATA.Data.Timings.Asr.ToString("hh:mm tt");
+                    magribItem.Desc = appData.API_DATA.Data.Timings.Maghrib.ToString("hh:mm tt");
 
-                    if (appData.API_DATA != null)
-                    {
-                        #region SetPrayerTimes
-                        fajrItem.Desc = appData.API_DATA.Data.Timings.Fajr.ToString("hh:mm tt");
-                        sunraiseItem.Desc = appData.API_DATA.Data.Timings.Sunrise.ToString("hh:mm tt");
-                        duhrItem.Desc = appData.API_DATA.Data.Timings.Dhuhr.ToString("hh:mm tt");
-                        asrItem.Desc = appData.API_DATA.Data.Timings.Asr.ToString("hh:mm tt");
-                        magribItem.Desc = appData.API_DATA.Data.Timings.Maghrib.ToString("hh:mm tt");
+                    ishaItem.Desc = appData.API_DATA.Data.Timings.Isha.ToString("hh:mm tt");
+                    #endregion
 
-                        ishaItem.Desc = appData.API_DATA.Data.Timings.Isha.ToString("hh:mm tt");
-                        #endregion
+                    #region CastAPI_Data
+                    var nextPrayerEnum = DateTimeHelper.GetNextPrayer(appData.API_DATA.Data.Timings);
+                    DateTimeHelper.hijriDate = Settings.Default.currentLang == "ar" ?
+                    appData.API_DATA.Data.Date.Hijri.Day + " - " +
+                    appData.API_DATA.Data.Date.Hijri.Month.Arabic + "-" +
+                    appData.API_DATA.Data.Date.Hijri.Year
+                    :
+                    appData.API_DATA.Data.Date.Hijri.Day + "-" +
+                    appData.API_DATA.Data.Date.Hijri.Month.English + "-" + appData.API_DATA.Data.Date.Hijri.Year;
+                    prayerNowEnum = nextPrayerEnum;
 
-                        #region CastAPI_Data
-                        var nextPrayerEnum = DateTimeHelper.GetNextPrayer(appData.API_DATA.Data.Timings);
-                        DateTimeHelper.hijriDate = Settings.Default.currentLang == "ar" ?
-                        appData.API_DATA.Data.Date.Hijri.Day + " - " +
-                        appData.API_DATA.Data.Date.Hijri.Month.Arabic + "-" +
-                        appData.API_DATA.Data.Date.Hijri.Year
-                        :
-                        appData.API_DATA.Data.Date.Hijri.Day + "-" +
-                        appData.API_DATA.Data.Date.Hijri.Month.English + "-" + appData.API_DATA.Data.Date.Hijri.Year;
-                        prayerNowEnum = nextPrayerEnum;
+                    #endregion
 
-                        #endregion
-
-                        #region DateCard
-                        hijriDateCard.Number = DateTimeHelper.ArabicDayName(Settings.Default.currentLang);
-                        hijriDateCard.Title = DateTimeHelper.hijriDate;
-                        #endregion
-                    }
-                    AdhanStatus();
-
+                    #region DateCard
+                    hijriDateCard.Number = DateTimeHelper.ArabicDayName(Settings.Default.currentLang);
+                    hijriDateCard.Title = DateTimeHelper.hijriDate;
+                    #endregion
                 }
+                AdhanStatus();
             });
 
 
@@ -246,7 +243,7 @@ namespace MosqueMate.Pages
                         {
                             var rr = prayerNowEnum;
 
-                            var muzzinAudio = helper.GetWavResxByName(prayerNowEnum == PrayerTimesEnum.Fajr ? "fajrAdhan" :  Settings.Default.MuezzinFilename);
+                            var muzzinAudio = helper.GetWavResxByName(prayerNowEnum == PrayerTimesEnum.Fajr ? "fajrAdhan" : Settings.Default.MuezzinFilename);
                             audioPlayer = new SoundHelper(muzzinAudio);
                             audioPlayer.PlayAudio();
                             notification.ShowNotification(resource["Adhan"], resource["prayerTimes.TimeForPrayer"] + resource[$"prayerTimes.{prayerNowEnum}"], System.Windows.Forms.ToolTipIcon.Info);

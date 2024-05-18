@@ -26,12 +26,15 @@ namespace MosqueMate
             appData.method = (int)Settings.Default.calculationMethod;
             #endregion
             NotificationWindows = new NotificationWindows(Settings.Default.notification);
-            AddApplicationToStartup();
+            if (Settings.Default.autoStartUp)
+                AddApplicationToStartup();
+            else
+                RemoveApplicationFromStartup(); 
         }
         public void AddApplicationToStartup()
         {
             string appName = "MosqueMate";
-            string appPath = Application.ResourceAssembly.Location.Replace(".dll",".exe");
+            string appPath = Application.ResourceAssembly.Location.Replace(".dll", ".exe");
             if (File.Exists(appPath))
             {
                 using (RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true))
@@ -39,7 +42,18 @@ namespace MosqueMate
                     key.SetValue(appName, appPath);
                 }
             }
-            
+
+        }
+        public void RemoveApplicationFromStartup()
+        {
+            string appName = "MosqueMate";
+            using (RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true))
+            {
+                if (key.GetValue(appName) != null)
+                {
+                    key.DeleteValue(appName);
+                }
+            }
         }
 
     }

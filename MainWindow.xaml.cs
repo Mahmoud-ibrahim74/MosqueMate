@@ -18,11 +18,14 @@ namespace MosqueMate
     {
         IAppData appData;
         public bool isPanelShow { get; private set; }
+        private string url = string.Empty;  
+        private readonly IAPI APIPrayer;
         public MainWindow()
         {
             InitializeComponent();
             appData = AppDataRepo.Instance;
-            API.url = $"https://api.aladhan.com/v1/timingsByCity/{DateTime.Now:dd-MM-yyyy}?" + $"city={appData.City}&country={appData.Country}&method={appData.method}";
+            url = $"https://api.aladhan.com/v1/timingsByCity/{DateTime.Now:dd-MM-yyyy}?" + $"city={appData.City}&country={appData.Country}&method={appData.method}";
+            APIPrayer = new API(this.url);
         }
 
 
@@ -53,16 +56,18 @@ namespace MosqueMate
 
             BackgroundTask.ExecuteThreadUI(async () =>
             {
-                if (await SendApiRequest())
+                var result = await APIPrayer.GetAsync();
+                if(result != null)
                 {
+                    #region SendRequestAPI
+                    var desrialize = JsonConvert.DeserializeObject<PrayerTimesResponse>(result);
+                    appData.API_DATA = desrialize;
+                    #endregion
                     PagesNavigation.Navigate(new Uri("Pages/Home.xaml", UriKind.RelativeOrAbsolute));
                 }
                 else
                 {
-                    using NotificationWindows notification = new NotificationWindows(true,()=>AppHelper.RestartApp());
-                    using ResourceJsonRepo resource = new ResourceJsonRepo();
-                    notification.ShowNotification("Error", resource["checkConnction"], System.Windows.Forms.ToolTipIcon.Error);
-                    return;
+                    PagesNavigation.Navigate(new Uri("Pages/Quran.xaml", UriKind.RelativeOrAbsolute));
                 }
 
             },this);
@@ -126,24 +131,6 @@ namespace MosqueMate
         {
             PagesNavigation.Navigate(new Uri("Pages/Hadith.xaml", UriKind.RelativeOrAbsolute));
 
-        }
-        private async Task<bool> SendApiRequest()
-        {
-            #region API_Data
-            var responce = await API.GetMethodAsync();
-            if (responce != null && API.HttpException == null)
-            {
-
-                #region SendRequestAPI
-                var desrialize = JsonConvert.DeserializeObject<PrayerTimesResponse>(responce);
-                appData.API_DATA = desrialize;
-                #endregion
-                return true;
-            }
-            else
-                return false;
-
-            #endregion
         }
     }
 }
