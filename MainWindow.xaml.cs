@@ -78,7 +78,6 @@ namespace MosqueMate
             if (MessageBox.Show(resource["CloseApp"], "warning", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
                 Application.Current.Shutdown();
-
             }
         }
         private void minimizeBtn_Click(object sender, RoutedEventArgs e)
@@ -131,6 +130,19 @@ namespace MosqueMate
         {
             PagesNavigation.Navigate(new Uri("Pages/Hadith.xaml", UriKind.RelativeOrAbsolute));
 
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            using ResourceJsonRepo resource = new ResourceJsonRepo();
+            if (MessageBox.Show(resource["CloseApp"], "warning", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
+            else
+            {
+                e.Cancel = true;    
+            }
         }
     }
 }
