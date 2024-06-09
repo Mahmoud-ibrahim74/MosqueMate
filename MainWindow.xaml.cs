@@ -1,4 +1,4 @@
-﻿using MosqueMate.Helper;
+using MosqueMate.Helper;
 using MosqueMate.Helper.HelperUI;
 using MosqueMateMedia.Properties;
 using MosqueMateServices.AppResources;
@@ -142,6 +142,14 @@ namespace MosqueMate
             else
             {
                 e.Cancel = true;    
+            }
+        }
+
+        private void borderLeftMenu_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if(e.ChangedButton == System.Windows.Input.MouseButton.Left)
+            {
+                this.DragMove();    
             }
         }
     }
