@@ -74,7 +74,7 @@
         <!--#endregion-->
 
         <!--#region Left Menu -->
-        <Border CornerRadius="10 0 0 10" Grid.RowSpan="2">
+        <Border x:Name="borderLeftMenu" CornerRadius="10 0 0 10" Grid.RowSpan="2" MouseDown="borderLeftMenu_MouseDown">
             <Border.Background>
                 <LinearGradientBrush >
                     <GradientStop Color="#223266"  />
