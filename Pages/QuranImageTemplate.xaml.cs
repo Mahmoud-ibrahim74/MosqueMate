@@ -79,6 +79,10 @@ namespace MosqueMate.Pages
                 Settings.Default.Save();
                 this.Close();
             }
+            else if (e.Key == Key.S && (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control)
+            {
+                BitmapHelper.CaptureScreenshot(this);
+            }
         }
         private void LoadImage()
         {

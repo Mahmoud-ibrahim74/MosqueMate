@@ -11,6 +11,7 @@ using PrayIDataServices.Helper.API;
 using System;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Input;
 
 namespace MosqueMate
 {
@@ -74,11 +75,8 @@ namespace MosqueMate
         }
         private void closeAppBTN_Click(object sender, RoutedEventArgs e)
         {
-            using ResourceJsonRepo resource = new ResourceJsonRepo();
-            if (MessageBox.Show(resource["CloseApp"], "warning", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
-            {
-                Application.Current.Shutdown();
-            }
+            Application.Current.Shutdown();
+
         }
         private void minimizeBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -150,6 +148,14 @@ namespace MosqueMate
             if(e.ChangedButton == System.Windows.Input.MouseButton.Left)
             {
                 this.DragMove();    
+            }
+        }
+
+        private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == Key.S && (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control)
+            {
+                BitmapHelper.CaptureScreenshot(this);
             }
         }
     }

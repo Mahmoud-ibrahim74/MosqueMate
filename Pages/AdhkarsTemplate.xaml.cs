@@ -50,7 +50,7 @@ namespace MosqueMate.Pages
                     DescLBL.Content = $"   {zekrContent.reference}";
                     ZekrIndexCount = Convert.ToInt32(zekrContent.count == string.Empty ? "0" : zekrContent.count);
                     SetLabelsZekr();
-                   
+
                 }
             });
         }
@@ -63,7 +63,7 @@ namespace MosqueMate.Pages
             zekrText.Text = zekr.zekr;
             DescLBL.Content = $"   {zekr.reference}";
             ZekrIndexCount = Convert.ToInt32(zekr.count == string.Empty ? "0" : zekr.count);
-           
+
 
         }
         private void prevZekr()
@@ -75,7 +75,7 @@ namespace MosqueMate.Pages
             zekrText.Text = zekr.zekr;
             DescLBL.Content = $"   {zekr.reference}";
             ZekrIndexCount = Convert.ToInt32(zekr.count == string.Empty ? "0" : zekr.count);
-           
+
 
         }
         private void SetLabelsZekr()
@@ -121,6 +121,11 @@ namespace MosqueMate.Pages
                     this.Close();
                 }
             }
+            if (e.Key == Key.S && (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control)
+            {
+                BitmapHelper.CaptureScreenshot(this);
+            }
+
         }
 
         private void Window_PreviewMouseWheel(object sender, MouseWheelEventArgs e)

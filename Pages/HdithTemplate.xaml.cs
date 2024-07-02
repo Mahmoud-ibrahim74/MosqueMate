@@ -4,6 +4,7 @@ using MosqueMateServices.AppResources;
 using MosqueMateServices.DTOs;
 using MosqueMateServices.Interfaces;
 using MosqueMateServices.Repositories;
+using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 
@@ -20,7 +21,7 @@ namespace MosqueMate.Pages
             InitializeComponent();
             hadith = new HadithRepository();
             this.hadithNumber = number;
-            dTOHadith = hadith.GetHadithByID(number);       
+            dTOHadith = hadith.GetHadithByID(number);
         }
 
         private void closeWindow_Click(object sender, RoutedEventArgs e)
@@ -32,17 +33,17 @@ namespace MosqueMate.Pages
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             BackgroundTask.ExecuteThreadUI(() =>
-            {         
-                using ResourceJsonRepo resource = new ResourceJsonRepo();   
+            {
+                using ResourceJsonRepo resource = new ResourceJsonRepo();
                 CustomControl.SetAppFont(this);
-                hadithTitle.Text = resource["HadithNo"] + " "+  StringHelper.NumberToWords(this.hadithNumber);
+                hadithTitle.Text = resource["HadithNo"] + " " + StringHelper.NumberToWords(this.hadithNumber);
                 hadithText.Text = dTOHadith.hadith;
             });
         }
-    
-        private void zeker_container_KeyDown(object sender,KeyEventArgs e)
+
+        private void zeker_container_KeyDown(object sender, KeyEventArgs e)
         {
-           
+
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -50,6 +51,10 @@ namespace MosqueMate.Pages
             if (e.Key == Key.Escape)
             {
                 this.Close();
+            }
+            else if (e.Key == Key.S && (Keyboard.Modifiers & ModifierKeys.Control) == ModifierKeys.Control)
+            {
+                BitmapHelper.CaptureScreenshot(this);
             }
         }
     }
